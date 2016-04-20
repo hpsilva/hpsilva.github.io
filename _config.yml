@@ -7,19 +7,20 @@
 url: "http://hpsilva.github.io"
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
 # Name of website
-title: 'hpsilva'
+title: hpsilva
+subtitle: Finance | Economy | Coding
 
 # Short description of your site
-description: 'On Finance...'
+description: On Finance...
+
+
 
 # --- Navigation bar options --- #
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
@@ -30,9 +31,7 @@ navbar-links:
     - GitHub Pages: "https://pages.github.com/"
   Author's home: "http://deanattali.com"
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+
 
 # --- Footer options --- #
 
@@ -61,6 +60,9 @@ footer-links-active:
 # Remove this if you don't want a link in the footer
 url-pretty: "hpsilva.io"  # eg. "deanattali.com/beautiful-jekyll"
 
+
+
+
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -68,6 +70,9 @@ disqus: "hpsilva"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-67737750-1"
+
+
+
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
