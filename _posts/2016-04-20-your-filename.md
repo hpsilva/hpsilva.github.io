@@ -1,7 +1,7 @@
 ---
 layout: post
-subtitle: null
-date: ""
+subtitle: This is a subtitle
+date: "2015-01-01"
 published: false
 title: TestPost
 ---
