@@ -137,7 +137,7 @@ prose:
           alterable: true
       - name: "date"
         field:
-          element: "text"
+          element: "text" 
           label: "Date"
           help: "Enter date of post."
           placeholder: "yyyy-mm-dd"
