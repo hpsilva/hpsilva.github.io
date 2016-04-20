@@ -1,50 +1,37 @@
 # --- General options --- #
-
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://hpsilva.github.io"
 baseurl: ""
 
-# Name of website
 title: hpsilva
 subtitle: Finance | Economy | Coding
 
-# Short description of your site
 description: On Finance...
 
 
-
 # --- Navigation bar options --- #
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
 avatar: "https://avatars2.githubusercontent.com/u/11724991?v=3&s=460"
 
-# List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Blog: "hpsilva.io"
+  Accounts: "accounts"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Contact Me: "contact"
-
+  Contact: "contact"
+  LOGIN: "http://hpsilva.io"
 
 
 # --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Helio Silva
+  name: hpsilva
   email: "contact@hpsilva.io"
   facebook: yourname  # eg. daattali
   github: hpsilva    # eg. daattali
   twitter: hpsilva_   # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  stackoverflow: hpsilva  # eg. "3943160/daattali"
  
 # Select which links to show in the footer
 footer-links-active:
@@ -54,27 +41,14 @@ footer-links-active:
   twitter: true
   github: true
   linkedin: false
-  stackoverflow: false
+  stackoverflow: true
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
 url-pretty: "hpsilva.io"  # eg. "deanattali.com/beautiful-jekyll"
 
-
-
-
 # --- Misc --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "hpsilva"
-
-# Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-67737750-1"
 
-
-
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/London"
