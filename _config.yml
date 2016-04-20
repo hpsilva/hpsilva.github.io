@@ -12,13 +12,13 @@ description: On Finance...
 #avatar: "https://avatars2.githubusercontent.com/u/11724991?v=3&s=460"
 
 navbar-links:
-  About Me: "aboutme"
-  Blog: "hpsilva.io"
+  About Me: "about"
+  Blog: "http://hpsilva.github.io"
   Accounts: "accounts"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+    - Market Snapshot: "http://hpsilva.io"
+    - Correlations: "http://hpsilva.io"
+    - Hour of day: "http://hpsilva.io"
   Contact: "contact"
   LOGIN: "http://hpsilva.io"
 
