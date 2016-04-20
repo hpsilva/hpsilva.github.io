@@ -33,7 +33,7 @@ print(x)
 
 And here is some code with syntax highlighting
 
-```javascript
+```python
 var foo = function(x) {
   return(x + 5);
 }
