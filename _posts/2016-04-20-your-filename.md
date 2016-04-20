@@ -3,7 +3,7 @@ layout: post
 subtitle: null
 date: ""
 published: false
-title: ""
+title: TestPost
 ---
 ---
 layout: page
