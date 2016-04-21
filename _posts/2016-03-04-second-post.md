@@ -6,7 +6,7 @@ comments: true
 show-avatar: true
 ---
 
-This is my first post, how exciting!
+###### This is my first post, how exciting!
 
 # Header 1
 ## Header 2
@@ -18,7 +18,9 @@ This is my first post, how exciting!
 > This is a blockquote!
 
 |Number|Another Number|Last Number|
+|:-|:-|:-|
 |One|Two|Three|
+|Three|Four|Five|
 
 **Code Chunk:**
 ~~~
