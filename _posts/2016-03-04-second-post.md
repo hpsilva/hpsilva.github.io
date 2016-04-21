@@ -34,3 +34,6 @@ x = 1 + 2
 ```python
 print('Hello World')
 ```
+
+**Lastly a plot from Plotly**
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/5.embed"></iframe>
