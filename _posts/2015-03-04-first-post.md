@@ -43,6 +43,10 @@ print('Hello World')
 class aclass:
   def __init__():
     print('The constructor')
+    
+object = aclass()
+
+print(object)
 ```
 
 **Lastly, a plot**
