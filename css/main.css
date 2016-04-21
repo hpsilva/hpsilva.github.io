@@ -108,7 +108,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #404040;
+  color: #33cc33; /*#404040*/
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -232,10 +232,10 @@ img {
 /* --- Footer ----------------------------------------------------------------------------------- */
 
 footer {
-  padding: 10px 0;
+  padding: 30px 0;
   background: #F5F5F5;
   border-top: 1px #EAEAEA solid;
-  margin-top: 10px;
+  margin-top: 50px;
   font-size: 14px;
 }
 
@@ -259,7 +259,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   footer {
-    padding: 10px 0;
+    padding: 50px 0;
   }
   footer .footer-links {
     font-size: 18px;
