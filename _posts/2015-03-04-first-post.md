@@ -53,7 +53,7 @@ object = aclass()
 print(object)
 ```
 
-```latex
+```xetex
 \documentclass[a4paper]{article}
 \usepackage{fontspec}
 \usepackage{minted}
