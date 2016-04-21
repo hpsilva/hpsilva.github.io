@@ -4,7 +4,7 @@ title: Hello World!
 subtitle: First post for stack test purposes
 comments: false
 show-avatar: true
-bigimg: /img/path.jpg
+bigimg: /img/banner-flying.jpg
 ---
 
 ###### This is my first post, how exciting!
