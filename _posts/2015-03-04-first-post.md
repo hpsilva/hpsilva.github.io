@@ -39,6 +39,10 @@ x = 1 + 2
 
 ```python
 print('Hello World')
+
+class aclass:
+  def __init__():
+    print('The constructor')
 ```
 
 **Lastly, a plot**
