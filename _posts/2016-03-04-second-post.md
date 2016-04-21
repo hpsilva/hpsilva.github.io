@@ -36,4 +36,4 @@ print('Hello World')
 ```
 
 **Lastly a plot from Plotly**
-<iframe width="750" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/5.embed"></iframe>
+<iframe width="770" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/5.embed"></iframe>
