@@ -32,7 +32,7 @@ a:focus {
 blockquote {
   color: #808080;
   font-style: italic;
-  border-left: 3px solid #003300;/*New Entry*/
+  border-left: 6px solid #6a6c75;/*New Entry*/
 }
 hr.small {
   max-width: 100px;
@@ -110,7 +110,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #009900; /*#404040*/
+  color: #004d00; /*#404040*/
 }
 
 .navbar-custom .navbar-brand:hover,
