@@ -18,7 +18,6 @@ This is my first post, how exciting!
 > This is a blockquote!
 
 |Number|Another Number|Last Number|
-|:-|:-|:-|
 |One|Two|Three|
 
 **Code Chunk:**
