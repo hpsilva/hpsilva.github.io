@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The first post!
-subtitle: Testing the stack
+title: Hello World!
+subtitle: First post for stack test purposes
 comments: false
 show-avatar: true
 ---
