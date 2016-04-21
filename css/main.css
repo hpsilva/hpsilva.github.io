@@ -1,6 +1,6 @@
 @import url("pygment_highlights.css");
 
-/* --- General --- */
+/* --- General ---------------------------------------------------------------------------------- */
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
@@ -91,7 +91,7 @@ img {
   }
 }
 
-/* --- Navbar --- */
+/* --- Navbar ----------------------------------------------------------------------------------- */
 
 .navbar-custom {
   background: #F5F5F5;
@@ -229,13 +229,13 @@ img {
   }
 }
 
-/* --- Footer --- */
+/* --- Footer ----------------------------------------------------------------------------------- */
 
 footer {
   padding: 30px 0;
   background: #F5F5F5;
   border-top: 1px #EAEAEA solid;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 14px;
 }
 
@@ -259,7 +259,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   footer {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   footer .footer-links {
     font-size: 18px;
@@ -269,7 +269,7 @@ footer .theme-by {
   }
 }
  
-/* --- Post preview --- */
+/* --- Post preview ----------------------------------------------------------------------------- */
 
 .post-preview {
   padding: 20px 0;
@@ -326,7 +326,7 @@ footer .theme-by {
   }
 }
 
-/* --- Post and page headers --- */
+/* --- Post and page headers -------------------------------------------------------------------- */
 
 .intro-header {
   margin: 80px 0 20px;
@@ -473,7 +473,7 @@ footer .theme-by {
   border-bottom-left-radius: 5px;
 }
 
-/* --- Pager --- */
+/* --- Pager ------------------------------------------------------------------------------------ */
 
 .pager li a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -512,7 +512,7 @@ footer .theme-by {
   }
 }
 
-/* --- Tables --- */
+/* --- Tables ----------------------------------------------------------------------------------- */
 
 table {
   padding: 0;
