@@ -20,7 +20,7 @@ p a {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
-  color: #009900; /*New Entry*/
+  color: #003300; /*New Entry*/
 }
 a {
   color: #008AFF;
@@ -32,7 +32,7 @@ a:focus {
 blockquote {
   color: #808080;
   font-style: italic;
-  border-left: 3px solid #ccc;/*New Entry*/
+  border-left: 3px solid #003300;/*New Entry*/
 }
 hr.small {
   max-width: 100px;
