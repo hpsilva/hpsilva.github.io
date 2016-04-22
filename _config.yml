@@ -3,7 +3,6 @@ url: "http://hpsilva.github.io"
 baseurl: ""
 
 title: hpsilva
-subtitle: Finance | Economy | Coding
 
 description: On Finance...
 
@@ -13,7 +12,7 @@ description: On Finance...
 
 navbar-links:
   About Me: "about"
-  Blog: "http://hpsilva.github.io"
+  Blog: "http://hpsilva.io"
   Accounts: "accounts"
   Resources:
     - Market Snapshot: "http://hpsilva.io"
