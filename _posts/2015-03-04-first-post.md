@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-subtitle: First post for stack test purposes
+subtitle: Testing the stack
 comments: false
 show-avatar: true
 bigimg: /img/banner-flying.jpg
