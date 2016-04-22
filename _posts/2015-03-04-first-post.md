@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-subtitle: Testing the stack
+subtitle: The very first post
 comments: false
 show-avatar: true
 bigimg: /img/banner-flying.jpg
@@ -45,7 +45,7 @@ class aclass:
   Class Constructor
   '''
   
-  def __init__():
+  def __init__(self):
     print('The constructor')
     
 object = aclass()
