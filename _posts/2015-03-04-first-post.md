@@ -38,8 +38,6 @@ x = 1 + 2
 **Another Code Chunck**
 
 ```python
-print('Hello World')
-
 class aclass:
   '''
   Class Constructor
