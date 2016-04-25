@@ -22,6 +22,6 @@ layout: page
   	</ul>
 
 <!-- CUBISM EXTRA! -->
-{% include cubism1.html %}
+{% include cubism.html %}
 
 </div>
