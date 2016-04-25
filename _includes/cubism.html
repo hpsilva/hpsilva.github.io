@@ -57,6 +57,10 @@
         .attr("class", "horizon")
         .call(context.horizon().extent([-20, 20]));
 
+    div.append("div")
+        .attr("class", "rule")
+        .call(context.rule())
+        .position(relative);
 
   } );
 
