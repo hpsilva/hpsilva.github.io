@@ -2,4 +2,4 @@
 layout: page
 ---
 
-{% include cubism.html %}
+{% include cubism1.html %}
