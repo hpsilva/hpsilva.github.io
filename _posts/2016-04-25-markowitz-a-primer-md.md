@@ -2,7 +2,7 @@
 layout: post
 subtitle: this is a subtitle
 published: true
-title: "2016-03-04-markowitz-a-primer.md"
+title: "A Primer on Markowitz"
 ---
 ## A New Post
 
