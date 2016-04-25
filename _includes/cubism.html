@@ -8,17 +8,17 @@
   #example2b { min-height: 255px; }
 </style>
 
+/* THE BODY */
 <body>
   <script src="/js/cubism/d3.v2.js"></script>
   <script src="/js/cubism/cubism.v1.js"></script>
   <script src="/js/cubism/highlight.min.js"></script>
-
-  <h1>Cubism.js</h1>
+  
   <h2>Time Series Visualization</h2>
   <div id="example1"></div>
-
 </body>
 
+/* RANDOM GENERATOR */
 <script>
   function random(name) {
     var value = 0,
@@ -38,7 +38,7 @@
   }
 </script>
 
-
+/* SET THE GRAPHIC */
 <script>
   var context = cubism.context()
       .serverDelay(0)
@@ -136,25 +136,20 @@
 
 
 <style>
-  
   body {
     font-family: sans-serif;
   }
-  
   svg {
     position: absolute;
     top: 0;
   }
-  
   #horizon-controls {
     position: absolute;
     width: 500px;
     padding: 10px;
     z-index: 1;
   }
-  
   #horizon-bands {
     float: right;
   }
-
 </style>
