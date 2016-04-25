@@ -1,7 +1,6 @@
 ---
 layout: post
 subtitle: this is a subtitle
-date: "2016-03-04"
 published: true
 title: "2016-03-04-markowitz-a-primer.md"
 ---
