@@ -1,8 +1,8 @@
 ---
 layout: post
-subtitle: null
+subtitle: this is a subtitle
 date: ""
-published: false
+published: true
 title: "2016-03-04-markowitz-a-primer.md"
 ---
 ## A New Post
