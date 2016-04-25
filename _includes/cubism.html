@@ -3,7 +3,7 @@
   @import url(/js/cubism/style.css);
 
   /* HEIGHT BELOW GRAPH STACK*/
-  #example1 { min-height: 155px; }
+  #example1 { min-height: 200px; }
 </style>
 
 <body>
@@ -40,16 +40,16 @@
       .serverDelay(0)
       .clientDelay(0)
       .step(1e3) //Milisencond interval to poll new data
-      .size(800); //GRAPH SIZE - FIND TO SET TO AUTOMATIC!? IT MOVES WITH RULER AND AXIS!
+      .size(900); //GRAPH SIZE - FIND TO SET TO AUTOMATIC!? IT MOVES WITH RULER AND AXIS!
 
-  var foo = random("foo"),
-      bar = random("bar");
+  var foo = random("DAX"),
+      bar = random("SP500");
 
   /* FIRST GRAPH */
   d3.select("div#example1").call( function(div) {
     div.append("div")
         .attr("class", "axis")
-        .call( context.axis().orient("left") );
+        .call( context.axis().orient("center") );
 
     div.selectAll(".horizon")
       .data( [foo, bar, foo.add(bar), foo.subtract(bar)] )
