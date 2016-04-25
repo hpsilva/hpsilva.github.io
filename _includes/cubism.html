@@ -40,7 +40,7 @@
       .serverDelay(0)
       .clientDelay(0)
       .step(1e3) //Milisencond interval to poll new data
-      .size(800); //GRAPH SIZE - FIND TO SET TO AUTOMATIC!? IT MOVES WITH RULER AND AXIS!
+      .size(800); //RULER SIZE
 
   var foo = random("DAX"),
       bar = random("SP500");
@@ -76,6 +76,7 @@
 <style>
   body {
     font-family: sans-serif;
+    size: 10px;
   }
   svg {
     position: absolute;
@@ -83,8 +84,8 @@
   }
   #horizon-controls {
     position: absolute;
-    width: 200px;
-    padding: 10px;
+    width: 500px;
+    padding: 50px;
     z-index: 1;
   }
   #horizon-bands {
