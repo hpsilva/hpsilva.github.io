@@ -3,7 +3,7 @@ layout: post
 title: Literature Review
 subtitle: Literature Review
 comments: false
-published: false
+published: true
 show-avatar: false
 ---
 ##2.1 The Capital Asset Pricing Model
