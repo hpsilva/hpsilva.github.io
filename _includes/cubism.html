@@ -46,13 +46,13 @@
       bar = random("bar");
 
   /* FIRST GRAPH */
-  d3.select("div#example1").call(function(div) {
+  d3.select("div#example1").call( function(div) {
     div.append("div")
         .attr("class", "axis")
-        .call(context.axis().orient("bottom"));
+        .call( context.axis().orient("left") );
 
     div.selectAll(".horizon")
-        .data([foo, bar, foo.add(bar), foo.subtract(bar)])
+      .data( [foo, bar, foo.add(bar), foo.subtract(bar)] )
       .enter().append("div")
         .attr("class", "horizon")
         .call(context.horizon().extent([-20, 20]));
@@ -61,66 +61,8 @@
         .attr("class", "rule")
         .call(context.rule())
         .position(relative);
-  });
+  } );
 
-  /* SECOND GRAPH */
-  d3.select("div#example2a").call(function(div) {
-    div.datum(foo);
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(120)
-          .mode("mirror")
-          .colors(["#bdd7e7","#bae4b3"])
-          .title("Area (120px)")
-          .extent([-10, 10]));
-
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(30)
-          .mode("mirror")
-          .colors(["#bdd7e7","#bae4b3"])
-          .title("Area (30px)")
-          .extent([-10, 10]));
-  });
-
-  /* THIRD GRAPH */
-  d3.select("div#example2b").call(function(div) {
-    div.datum(foo);
-
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(120)
-          .colors(["#bdd7e7","#bae4b3"])
-          .title("Horizon, 1-band (120px)")
-          .extent([-10, 10]));
-
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(60)
-          .colors(["#6baed6","#bdd7e7","#bae4b3","#74c476"])
-          .title("Horizon, 2-band (60px)")
-          .extent([-10, 10]));
-
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(40)
-          .colors(["#3182bd","#6baed6","#bdd7e7","#bae4b3","#74c476","#31a354"])
-          .title("Horizon, 3-band (40px)")
-          .extent([-10, 10]));
-
-    div.append("div")
-        .attr("class", "horizon")
-        .call(context.horizon()
-          .height(30)
-          .colors(["#08519c","#3182bd","#6baed6","#bdd7e7","#bae4b3","#74c476","#31a354","#006d2c"])
-          .title("Horizon, 4-band (30px)")
-          .extent([-10, 10]));
-  });
 
   // On mousemove, reposition the chart values to match the rule.
   context.on("focus", function(i) {
