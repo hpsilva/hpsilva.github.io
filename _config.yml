@@ -15,7 +15,7 @@ navbar-links:
   Blog: "http://hpsilva.io"
   Accounts: "accounts"
   Resources:
-    - Market Snapshot: "http://hpsilva.io"
+    - Market Snapshot: "snapshot"
     - Market Sentiment: "http://hpsilva.io"
     - Correlations: "http://hpsilva.io"
     - Period of day: "http://hpsilva.io"
