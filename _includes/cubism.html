@@ -4,8 +4,6 @@
 
   /* HEIGHT BELOW GRAPH STACK*/
   #example1 { min-height: 155px; }
-  #example2a { min-height: 153px; }
-  #example2b { min-height: 255px; }
 </style>
 
 <body>
@@ -18,6 +16,7 @@
 </body>
 
 <script>
+// RANDOM GENERATOR
   function random(name) {
     var value = 0,
         values = [],
@@ -50,7 +49,7 @@
   d3.select("div#example1").call(function(div) {
     div.append("div")
         .attr("class", "axis")
-        .call(context.axis().orient("top"));
+        .call(context.axis().orient("bottom"));
 
     div.selectAll(".horizon")
         .data([foo, bar, foo.add(bar), foo.subtract(bar)])
