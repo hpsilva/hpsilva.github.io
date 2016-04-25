@@ -38,7 +38,7 @@ x = 1 + 2
 **Another Code Chunck**
 
 ```python
-class aclass:
+class aClass:
   '''
   Class Constructor
   '''
@@ -46,7 +46,7 @@ class aclass:
   def __init__(self):
     print('The constructor')
     
-object = aclass()
+object = aClass()
 
 print(object)
 ```
