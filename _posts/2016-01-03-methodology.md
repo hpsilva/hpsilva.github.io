@@ -8,4 +8,18 @@ show-avatar: false
 ---
 
 
-This summation expression $\sum_{i=1}^n X_i$ appears inlin
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mi>n</mi>
+  </munderover>
+  <msub>
+    <mi>X</mi>
+    <mi>i</mi>
+  </msub>
+</math>
