@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A primer on Markowitz
-subtitle: this is a subtitle
+subtitle: Intro to Markowitz theory
 comments: false
 published: true
 show-avatar: false
