@@ -49,7 +49,7 @@
   d3.select("div#example1").call( function(div) {
     div.append("div")
         .attr("class", "axis")
-        .call( context.axis().orient("center") );
+        .call( context.axis().orient("top") );
 
     div.selectAll(".horizon")
       .data( [foo, bar, foo.add(bar), foo.subtract(bar)] )
@@ -57,10 +57,7 @@
         .attr("class", "horizon")
         .call(context.horizon().extent([-20, 20]));
 
-    div.append("div")
-        .attr("class", "rule")
-        .call(context.rule())
-        .position(relative);
+
   } );
 
 
