@@ -1,8 +1,8 @@
 ---
 layout: post
+title: A primer on Markowitz
 subtitle: this is a subtitle
 published: false
-
 ---
 ## A New Post
 
