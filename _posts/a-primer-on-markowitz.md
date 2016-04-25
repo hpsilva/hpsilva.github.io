@@ -2,6 +2,7 @@
 layout: post
 title: A primer on Markowitz
 subtitle: this is a subtitle
+date: 2016-04-01
 published: false
 ---
 ## A New Post
