@@ -3,7 +3,7 @@ layout: post
 title: A primer on Markowitz
 subtitle: Intro to Markowitz theory
 comments: false
-published: false
+published: true
 show-avatar: false
 ---
 ## Intro
