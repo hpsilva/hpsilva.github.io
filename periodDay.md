@@ -110,7 +110,7 @@ title: Market Snapshot
     <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
 </head>
 
-<div id="demo">
+<body id="demo">
   <script>
     // Create Context
     var context = cubism.context()
@@ -166,6 +166,6 @@ title: Market Snapshot
         }, name);
     }
 
-  </script>
+  </body>
 </div>
 
