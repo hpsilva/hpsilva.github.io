@@ -8,7 +8,7 @@ subtitle: This is a subtitle
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-    @import url(/js/cubism/style.css);
+    
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
@@ -19,9 +19,9 @@ subtitle: This is a subtitle
   <script>
     // Create Context
     var context = cubism.context()
-        //.serverDelay() // Collection lag
+        .serverDelay(new Date(2012, 4, 2) - Date.now()) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(5000) // Number of Observation to parse
+        .size(1280) // Number of Observation to parse
         .stop();
     
     // Add Ruler
@@ -74,7 +74,7 @@ subtitle: This is a subtitle
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[25][1],
+                  compare = rows[400][1],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
