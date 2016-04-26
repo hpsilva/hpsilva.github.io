@@ -3,11 +3,14 @@ layout: page
 title: Market Snapshot
 subtitle: This is a subtitle
 ---
+<meta charset="utf-8">
 
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+    @import url(/js/cubism/style.css);
   
+  /*
     .axis {
       font: 10px sans-serif;
       position: fixed;
@@ -89,6 +92,7 @@ subtitle: This is a subtitle
       background: #000;
       z-index: 2;
     }
+    */
   </style>
     <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
     <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
@@ -103,18 +107,20 @@ subtitle: This is a subtitle
         .size(1280)
         .stop();
     
-    // Plot Graph
-    d3.select("#demo").selectAll(".axis")
+    // Add Ruler
+    d3.select("body").selectAll(".axis")
         .data(["top", "bottom"])
       .enter().append("div")
         .attr("class", function(d) { return d + " axis"; })
         .each(function(d) { d3.select(this).call(context.axis().ticks(12).orient(d)); });
     
-    d3.select("#demo").append("div")
+    // Add vertical line
+    d3.select("body").append("div")
         .attr("class", "rule")
         .call(context.rule());
     
-    d3.select("#demo").selectAll(".horizon")
+    // Plot Horizon Graphs
+    d3.select("body").selectAll(".horizon")
         .data(["AAPL", "BIDU", "GOOG"].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
