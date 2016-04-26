@@ -73,7 +73,7 @@ subtitle: This is a subtitle
       alert(name)
       var format = d3.time.format("%Y-%m-%d %H:%M");
       return context.metric(function(start, stop, step, callback) {
-          d3.csv("/js/cubism/snapshott.csv", function(rows) {
+          d3.csv("/js/cubism/snapshot.csv", function(rows) {
               rows = rows.map(function(d) {
                   alert(d)
                   return [format.parse(d.Date), +d[name]];
