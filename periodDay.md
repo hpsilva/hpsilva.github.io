@@ -140,7 +140,7 @@ subtitle: This is a subtitle
         .attr("class", "horizon")
       .call(context.horizon()
         .format(d3.format("+,.2p"))
-        .height(15));
+        .height(25));
     
     // Set Focus on the Ruler / Axis
     context.on("focus", function(i) {
@@ -157,6 +157,7 @@ subtitle: This is a subtitle
                 }).filter(function(d) {
                     return d[1];
                 }).reverse();
+                write.alert(rows)
                 var date = rows[0][0],
                     compare = rows[350][1],
                     value = rows[0][1],
