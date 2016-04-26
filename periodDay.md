@@ -1,28 +1,12 @@
 ---
 layout: page
-subtitle: Market Snapshot
+title: Market Snapshot
+subtitle: This is a subtitle
 ---
 
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-  
-  /*
-    body {
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      margin: 30px auto;
-      width: 1280px;
-      position: relative;
-    }
-  
-    header {
-      padding: 6px 0;
-    }
-  
-    .group {
-      margin-bottom: 1em;
-    }
-    */
   
     .axis {
       font: 10px sans-serif;
@@ -126,11 +110,11 @@ subtitle: Market Snapshot
         .attr("class", function(d) { return d + " axis"; })
         .each(function(d) { d3.select(this).call(context.axis().ticks(12).orient(d)); });
     
-    d3.select("body").append("div")
+    d3.select("#demo").append("div")
         .attr("class", "rule")
         .call(context.rule());
     
-    d3.select("body").selectAll(".horizon")
+    d3.select("#demo").selectAll(".horizon")
         .data(["AAPL", "BIDU", "GOOG"].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
