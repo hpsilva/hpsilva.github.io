@@ -39,9 +39,8 @@ subtitle: This is a test!
     // Add the different cubism graphic lines
     d3.select("body").selectAll(".horizon")
         .data(d3.range(1, 50).map(random))
-      .enter().insert("div", ".bottom")
+      .enter().insert("div", ".bottom").
         .attr("class", "horizon")
-        .height(120)
         .call(context.horizon().extent([-10, 10]));
     
     // On mousemove, reposition the chart values to match the rule.
