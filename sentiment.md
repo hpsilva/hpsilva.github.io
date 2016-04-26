@@ -39,7 +39,7 @@ subtitle: This is a test!
         .data(d3.range(1, 10).map(random))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
-        .call( context.horizon().extent([-10, 10]).height(120) );
+        .call( context.horizon().extent([-10, 10]).height(30) );
         
     
     // On mousemove, reposition the chart values to match the rule.
