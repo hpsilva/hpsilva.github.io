@@ -142,30 +142,27 @@ layout: page
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-      window.alert( name )
-    
-      var format = d3.time.format("%d-%b-%y");
-    
-      return context.metric( function(start, stop, step, callback) {
-        
-        d3.csv("/js/cubism/" + name + '.csv', function(rows) {
-          
-          rows = rows.map(function(d) { return [format.parse(d.Date), +d.Date; }).filter(function(d) { return d[1]; }).reverse();
-          window.alert(rows)
-          var date = rows[0][0], compare = rows[400][1], value = rows[0][1], values = [value];
-          
-          rows.forEach(function(d) {
-            while ( (date = d3.time.day.offset(date, 1)) < d[0] ) values.push(value);
-            values.push(value = (d[1] - compare) / compare);
-          });
-          window.alert(rows)
-          callback(null, values.slice(-context.size()));
-        
-        });
-      
-      }, name);
-    
+        var format = d3.time.format("%d-%b-%y");
+        return context.metric(function(start, stop, step, callback) {
+            d3.csv("/js/cubism/" + name + ".csv", function(rows) {
+                rows = rows.map(function(d) {
+                    return [format.parse(d.Date), +d.Open];
+                }).filter(function(d) {
+                    return d[1];
+                }).reverse();
+                var date = rows[0][0],
+                    compare = rows[400][1],
+                    value = rows[0][1],
+                    values = [value];
+                rows.forEach(function(d) {
+                    while ((date = d3.time.day.offset(date, 1)) < d[0]) values.push(value);
+                    values.push(value = (d[1] - compare) / compare);
+                });
+                callback(null, values.slice(-context.size()));
+            });
+        }, name);
     }
+
   </script>
 </body>
 
