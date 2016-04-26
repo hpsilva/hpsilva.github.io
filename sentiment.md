@@ -6,8 +6,6 @@ subtitle: This is a test!
 
 <meta charset="utf-8">
 
-<title>Cubism.js Demo</title>
-
 <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     @import url(/js/cubism/style.css);
@@ -16,6 +14,7 @@ subtitle: This is a test!
 <body>
     <h1> Cubism Example: </h1>
     <h5> Several instruments!</h5>
+    <p>A paragraph</p>
     <script src="/js/cubism/d3.v2.js"></script>
     <script src="/js/cubism/cubism.v1.js"></script>
 </body>
