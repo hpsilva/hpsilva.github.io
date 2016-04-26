@@ -151,7 +151,7 @@ layout: page
                     return d[1];
                 }).reverse();
                 var date = rows[0][0],
-                    compare = rows[399][1],
+                    compare = rows[350][1],
                     value = rows[0][1],
                     values = [value];
                 rows.forEach(function(d) {
