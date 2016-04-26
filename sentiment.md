@@ -14,6 +14,8 @@ subtitle: This is a test!
 </style>
 
 <body>
+    <h1> Cubism Example: </h1>
+    <h5> Several instruments!</h5>
     <script src="/js/cubism/d3.v2.js"></script>
     <script src="/js/cubism/cubism.v1.js"></script>
 </body>
