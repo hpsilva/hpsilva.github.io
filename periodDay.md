@@ -21,8 +21,8 @@ subtitle: This is a subtitle
     var context = cubism.context()
         //.serverDelay() // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(2000) // Number of Observation to parse
-        .stop();
+        .size(3000) // Number of Observation to parse
+        //.stop();
     
     // Add Ruler
     d3.select("body").selectAll(".axis")
