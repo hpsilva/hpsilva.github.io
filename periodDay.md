@@ -140,7 +140,7 @@ subtitle: This is a subtitle
         .attr("class", "horizon")
       .call(context.horizon()
         .format(d3.format("+,.2p"))
-        .height(60));
+        .height(15));
     
     // Set Focus on the Ruler / Axis
     context.on("focus", function(i) {
@@ -149,7 +149,7 @@ subtitle: This is a subtitle
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-        var format = d3.time.format("%d-%b-%y");
+        var format = d3.time.format("%y-%m-%s %H:%M");
         return context.metric(function(start, stop, step, callback) {
             d3.csv("/js/cubism/snapshott.csv", function(rows) {
                 rows = rows.map(function(d) {
