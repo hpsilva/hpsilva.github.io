@@ -9,6 +9,7 @@ subtitle: This is a test!
 <title>Cubism.js Demo</title>
 
 <style>
+    @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     @import url(/js/cubism/style.css);
 </style>
 
@@ -41,9 +42,10 @@ subtitle: This is a test!
         .attr("class", "horizon")
         .call(context.horizon().extent([-10, 10]));
     
-    //context.on("focus", function(i) {
-    //  d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
-    //});
+    // On mousemove, reposition the chart values to match the rule.
+    context.on("focus", function(i) {
+      d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
+    });
     
     // Replace this with context.graphite and graphite.metric!
     function random(x) {
@@ -62,5 +64,9 @@ subtitle: This is a test!
         callback(null, values = values.slice((start - stop) / step));
       }, x);
     }
-
 </script>
+
+
+<style>
+
+</style>
