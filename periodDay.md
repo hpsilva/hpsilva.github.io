@@ -3,6 +3,7 @@
 
 <head>
   <style>
+  /*
     body {
       font-family: "Helvetica Neue", Helvetica, sans-serif;
       margin: 30px auto;
@@ -17,6 +18,7 @@
     .group {
       margin-bottom: 1em;
     }
+    */
   
     .axis {
       font: 10px sans-serif;
