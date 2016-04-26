@@ -19,7 +19,7 @@ subtitle: This is a subtitle
   <script>
     // Create Context
     var context = cubism.context()
-        .serverDelay(new Date(2016, 4, 1) - Date.now())
+        //.serverDelay(new Date(2016, 4, 1) - Date.now())
         .step(864e5)
         .size(1280)
         .stop();
@@ -74,7 +74,7 @@ subtitle: This is a subtitle
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[100][1],
+                  compare = rows[25][1],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
