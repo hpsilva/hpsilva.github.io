@@ -22,7 +22,7 @@ subtitle: This is a subtitle
         //.serverDelay() // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
         .size(0) // Number of Observation to parse
-        //.stop();
+        .stop();
     
     // Add Ruler
     d3.select("body").selectAll(".axis")
