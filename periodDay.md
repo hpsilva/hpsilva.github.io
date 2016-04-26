@@ -1,11 +1,7 @@
 ---
 ---
 
-<script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <style>
     body {
       font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -105,8 +101,8 @@
     }
   </style>
   
-  <script src="./demo-stocks_files/d3.v2.min.js" charset="utf-8"></script>
-  <script src="./demo-stocks_files/cubism.v1.min.js"></script>
+    <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
+    <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
 </head>
 
 <body id="demo">
