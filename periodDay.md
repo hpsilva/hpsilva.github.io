@@ -5,6 +5,8 @@ title: Market Snapshot
 
 <head>
   <style>
+    @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+  
   /*
     body {
       font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -104,12 +106,11 @@ title: Market Snapshot
       z-index: 2;
     }
   </style>
-  
     <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
     <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
 </head>
 
-<body id="demo">
+<div id="demo">
   <script>
     // Create Context
     var context = cubism.context()
@@ -166,5 +167,5 @@ title: Market Snapshot
     }
 
   </script>
-</body>
+</div>
 
