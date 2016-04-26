@@ -134,7 +134,7 @@ layout: page
         .attr("class", "horizon")
       .call(context.horizon()
         .format(d3.format("+,.2p"))
-        .height(30));
+        .height(60));
     
     // Set Focus on the Ruler / Axis
     context.on("focus", function(i) {
