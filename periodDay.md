@@ -166,6 +166,6 @@ title: Market Snapshot
         }, name);
     }
 
-  </body>
-</div>
+  </script>
+</body>
 
