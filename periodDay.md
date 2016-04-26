@@ -71,7 +71,7 @@ subtitle: This is a subtitle
     // Create Metrics by Reading from CSV file
     function stock(name) {
       alert(name)
-      var format = d3.time.format("%y-%m-%s %H:%M");
+      var format = d3.time.format("%Y-%m-%d %H:%M");
       return context.metric(function(start, stop, step, callback) {
           d3.csv("/js/cubism/snapshott.csv", function(rows) {
               rows = rows.map(function(d) {
