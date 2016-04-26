@@ -13,8 +13,6 @@ subtitle: This is a test!
 
 <body>
     <h1> Cubism Example: </h1>
-    <h5> Several instruments!</h5>
-    <p>A paragraph</p>
     <script src="/js/cubism/d3.v2.js"></script>
     <script src="/js/cubism/cubism.v1.js"></script>
 </body>
@@ -41,7 +39,8 @@ subtitle: This is a test!
         .data(d3.range(1, 10).map(random))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
-        .call(context.horizon().extent([-10, 10]));
+        .call( context.horizon().extent([-10, 10]).height(120) );
+        
     
     // On mousemove, reposition the chart values to match the rule.
     context.on("focus", function(i) {
