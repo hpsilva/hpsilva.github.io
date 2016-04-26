@@ -35,9 +35,10 @@ subtitle: This is a subtitle
     d3.select("body").append("div")
         .attr("class", "rule")
         .call(context.rule());
-        
-    /*
-    'AUD_CAD', 'AUD_CHF', 'AUD_HKD', 'AUD_JPY', 'AUD_NZD', 'AUD_SGD', 'AUD_USD',
+    
+    // Plot Horizon Graphs
+    d3.select("body").selectAll(".horizon")
+        .data([ 'AU200_AUD',     'AUD_CAD', 'AUD_CHF', 'AUD_HKD', 'AUD_JPY', 'AUD_NZD', 'AUD_SGD', 'AUD_USD',
                 'BCO_USD', 'CAD_CHF', 'CAD_HKD', 'CAD_JPY', 'CAD_SGD', 'CH20_CHF', 'CHF_HKD', 'CHF_JPY',
                 'CHF_ZAR', 'CORN_USD', 'DE10YB_EUR', 'DE30_EUR', 'EU50_EUR', 'EUR_AUD', 'EUR_CAD', 'EUR_CHF',
                 'EUR_CZK', 'EUR_DKK', 'EUR_GBP', 'EUR_HKD', 'EUR_HUF', 'EUR_JPY', 'EUR_NOK', 'EUR_NZD', 'EUR_PLN',
@@ -50,13 +51,7 @@ subtitle: This is a subtitle
                 'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR', 'WHEAT_USD', 'WTICO_USD',
                 'XAG_AUD', 'XAG_CAD', 'XAG_CHF', 'XAG_EUR', 'XAG_GBP', 'XAG_HKD', 'XAG_JPY', 'XAG_NZD', 'XAG_SGD', 'XAG_USD',
                 'XAU_AUD', 'XAU_CAD', 'XAU_CHF', 'XAU_EUR', 'XAU_GBP', 'XAU_HKD', 'XAU_JPY', 'XAU_NZD', 'XAU_SGD', 'XAU_USD',
-                'XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD',
-      */
-    
-    // Plot Horizon Graphs
-    d3.select("body").selectAll(".horizon")
-        .data([ 'AU200_AUD',  
-                'ZAR_JPY'].map(stock))
+                'XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'ZAR_JPY'].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
       .call(context.horizon()
@@ -70,12 +65,10 @@ subtitle: This is a subtitle
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-      alert(name)
-      var format = d3.time.format("%Y-%m-%d %H:%M");
+      var format = d3.time.format("%Y-%m-%d");
       return context.metric(function(start, stop, step, callback) {
           d3.csv("/js/cubism/snapshot.csv", function(rows) {
               rows = rows.map(function(d) {
-                  alert(d)
                   return [format.parse(d.Date), +d[name]];
               }).filter(function(d) {
                   return d[1];
