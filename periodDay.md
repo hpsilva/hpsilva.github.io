@@ -75,11 +75,11 @@ subtitle: This is a subtitle
       return context.metric(function(start, stop, step, callback) {
           d3.csv("/js/cubism/snapshott.csv", function(rows) {
               rows = rows.map(function(d) {
+                  alert(d)
                   return [format.parse(d.Date), +d[name]];
               }).filter(function(d) {
                   return d[1];
               }).reverse();
-              alert(rows)
               var date = rows[0][0],
                   compare = rows[350][1],
                   value = rows[0][1],
