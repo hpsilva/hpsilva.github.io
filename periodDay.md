@@ -142,7 +142,6 @@ layout: page
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-      
       window.alert( name )
     
       var format = d3.time.format("%d-%b-%y");
@@ -159,6 +158,7 @@ layout: page
             while ( (date = d3.time.day.offset(date, 1)) < d[0] ) values.push(value);
             values.push(value = (d[1] - compare) / compare);
           });
+          window.alert(rows)
           callback(null, values.slice(-context.size()));
         
         });
