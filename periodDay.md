@@ -78,7 +78,7 @@ subtitle: This is a subtitle
                 }).filter(function(d) {
                     return d[1];
                 }).reverse();
-                write.alert(rows)
+                alert(rows)
                 var date = rows[0][0],
                     compare = rows[350][1],
                     value = rows[0][1],
