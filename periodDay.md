@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Market Snapshot
+subtitle: Market Snapshot
 ---
 
 <head>
