@@ -144,7 +144,7 @@ layout: page
     function stock(name) {
         var format = d3.time.format("%d-%b-%y");
         return context.metric(function(start, stop, step, callback) {
-            d3.csv("/js/cubism/data.csv", function(rows) {
+            d3.csv("/js/cubism/AAPL.csv", function(rows) {
                 rows = rows.map(function(d) {
                     return [format.parse(d.Date), +d.Open];
                 }).filter(function(d) {
