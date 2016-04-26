@@ -70,26 +70,27 @@ subtitle: This is a subtitle
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-        var format = d3.time.format("%y-%m-%s %H:%M");
-        return context.metric(function(start, stop, step, callback) {
-            d3.csv("/js/cubism/snapshott.csv", function(rows) {
-                rows = rows.map(function(d) {
-                    return [format.parse(d.Date), +d[name]];
-                }).filter(function(d) {
-                    return d[1];
-                }).reverse();
-                alert(rows)
-                var date = rows[0][0],
-                    compare = rows[350][1],
-                    value = rows[0][1],
-                    values = [value];
-                rows.forEach(function(d) {
-                    while ((date = d3.time.day.offset(date, 1)) < d[0]) values.push(value);
-                    values.push(value = (d[1] - compare) / compare);
-                });
-                callback(null, values.slice(-context.size()));
-            });
-        }, name);
+      alert(name)
+      var format = d3.time.format("%y-%m-%s %H:%M");
+      return context.metric(function(start, stop, step, callback) {
+          d3.csv("/js/cubism/snapshott.csv", function(rows) {
+              rows = rows.map(function(d) {
+                  return [format.parse(d.Date), +d[name]];
+              }).filter(function(d) {
+                  return d[1];
+              }).reverse();
+              alert(rows)
+              var date = rows[0][0],
+                  compare = rows[350][1],
+                  value = rows[0][1],
+                  values = [value];
+              rows.forEach(function(d) {
+                  while ((date = d3.time.day.offset(date, 1)) < d[0]) values.push(value);
+                  values.push(value = (d[1] - compare) / compare);
+              });
+              callback(null, values.slice(-context.size()));
+          });
+      }, name);
     }
 
   </script>
