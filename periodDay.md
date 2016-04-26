@@ -1,7 +1,6 @@
 ---
 ---
 
-<html>
 <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
 
 <head>
@@ -166,4 +165,3 @@
   </script>
 </body>
 
-</html>
