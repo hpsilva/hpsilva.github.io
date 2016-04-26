@@ -149,7 +149,7 @@ layout: page
         
         d3.csv("/js/cubism/data.csv", function(rows) {
           
-          rows = rows.map(function(d) { return [format.parse(d.Date), +d.name]; }).filter(function(d) { return d[1]; }).reverse();
+          rows = rows.map(function(d) { return [format.parse(d.Date), +d[name]]; }).filter(function(d) { return d[1]; }).reverse();
           var date = rows[0][0], compare = rows[400][1], value = rows[0][1], values = [value];
           
           rows.forEach(function(d) {
