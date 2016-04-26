@@ -142,6 +142,8 @@ layout: page
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
+      
+      window.alert( name )
     
       var format = d3.time.format("%d-%b-%y");
     
