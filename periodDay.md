@@ -128,7 +128,7 @@
         .call(context.rule());
     
     d3.select("body").selectAll(".horizon")
-        .data(["AAPL", "BIDU", "SINA", "GOOG", "MSFT", "YHOO", "ADBE", "REDF", "INSP", "IACI", "AVID", "CCUR", "DELL", "DGII", "HPQ", "SGI", "SMCI", "SNDK", "SYNA"].map(stock))
+        .data(["AAPL", "BIDU", "GOOG"].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
       .call(context.horizon()
@@ -145,7 +145,7 @@
       var format = d3.time.format("%d-%b-%y");
     
       return context.metric(function(start, stop, step, callback) {
-        d3.csv("./data/" + name + ".csv", function(rows) {
+        d3.csv("/js/cubism/" + name + ".csv", function(rows) {
           rows = rows.map(function(d) { return [format.parse(d.Date), +d.Open]; }).filter(function(d) { return d[1]; }).reverse();
           var date = rows[0][0], compare = rows[400][1], value = rows[0][1], values = [value];
           
