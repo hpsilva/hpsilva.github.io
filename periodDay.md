@@ -148,9 +148,9 @@ layout: page
     
       return context.metric( function(start, stop, step, callback) {
         
-        d3.csv("/js/cubism/data.csv", function(rows) {
+        d3.csv("/js/cubism/" + name + '.csv', function(rows) {
           
-          rows = rows.map(function(d) { return [format.parse(d.Date), +d[name]]; }).filter(function(d) { return d[1]; }).reverse();
+          rows = rows.map(function(d) { return [format.parse(d.Date), +d.Date; }).filter(function(d) { return d[1]; }).reverse();
           window.alert(rows)
           var date = rows[0][0], compare = rows[400][1], value = rows[0][1], values = [value];
           
