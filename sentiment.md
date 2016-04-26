@@ -38,8 +38,8 @@ subtitle: This is a test!
     
     // Add the different cubism graphic lines
     d3.select("body").selectAll(".horizon")
-        .data(d3.range(1, 50).map(random))
-      .enter().insert("div", ".bottom").
+        .data(d3.range(1, 10).map(random))
+      .enter().insert("div", ".bottom")
         .attr("class", "horizon")
         .call(context.horizon().extent([-10, 10]));
     
