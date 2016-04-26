@@ -20,7 +20,7 @@ subtitle: This is a subtitle
     // Create Context
     var context = cubism.context()
         //.serverDelay() // Collection lag
-        .step(864e5) // step(5 * 60 * 1000) - five minutes per value
+        .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
         .size(2000) // Number of Observation to parse
         .stop();
     
