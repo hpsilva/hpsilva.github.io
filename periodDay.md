@@ -19,7 +19,7 @@ subtitle: This is a subtitle
   <script>
     // Create Context
     var context = cubism.context()
-        //.serverDelay(new Date(2012, 4, 2) - Date.now())
+        .serverDelay(new Date(2016, 4, 1) - Date.now())
         .step(864e5)
         .size(1280)
         .stop();
