@@ -21,7 +21,7 @@ subtitle: This is a subtitle
     var context = cubism.context()
         //.serverDelay() // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(1000) // Number of Observation to parse
+        .size(5000) // Number of Observation to parse
         .stop();
     
     // Add Ruler
@@ -65,7 +65,7 @@ subtitle: This is a subtitle
     
     // Create Metrics by Reading from CSV file
     function stock(name) {
-      var format = d3.time.format("%Y-%m-%d");
+      var format = d3.time.format("%Y-%m-%d %H:%M:%S");
       return context.metric(function(start, stop, step, callback) {
           d3.csv("/js/cubism/snapshot.csv", function(rows) {
               rows = rows.map(function(d) {
