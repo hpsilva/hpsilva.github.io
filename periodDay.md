@@ -115,7 +115,7 @@ subtitle: This is a subtitle
   <script>
     // Create Context
     var context = cubism.context()
-        .serverDelay(new Date(2012, 4, 2) - Date.now()) // Collection lag
+        //.serverDelay(new Date(2012, 4, 2) - Date.now()) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
         .size(1280) // Number of Observation to parse
         .stop();
