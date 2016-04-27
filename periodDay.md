@@ -8,7 +8,6 @@ subtitle: This is a subtitle
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-    @import url(/js/cubism/style.css);
     
     body {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
