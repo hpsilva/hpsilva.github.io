@@ -114,10 +114,9 @@
     var context = cubism.context()
         //.serverDelay(new Date(2012, 4, 2) - Date.now()) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(1370) // Number of Observation to parse
+        .size(1250) // Number of Observation to parse
         .stop();
         
-    alert( Date.now() - Date(2012, 4, 2)  )
     alert( Date.now() )
     
     // Add Ruler
