@@ -114,8 +114,10 @@
     var context = cubism.context()
         //.serverDelay(new Date(2012, 4, 2) - Date.now()) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(1440) // Number of Observation to parse
+        .size(1000) // Number of Observation to parse
         .stop();
+        
+    alert( Date(2012, 4, 2) - Date.now() )
     
     // Add Ruler
     d3.select("body").selectAll(".axis")
