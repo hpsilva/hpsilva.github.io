@@ -112,7 +112,7 @@
   <script>
     // Create Context
     var context = cubism.context()
-        .serverDelay(new Date.now()) // Collection lag
+        .serverDelay(1) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
         .size(1200) // Number of Observation to parse
         .stop();
