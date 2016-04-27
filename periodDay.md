@@ -164,7 +164,7 @@
       return context.metric(function(start, stop, step, callback) {
           d3.csv("/js/cubism/snapshot.csv", function(rows) {
               rows = rows.map(function(d) {
-                  return [format.parse(d.Date), +d['ZAR_JPY']];
+                  return [format.parse(d.Date), +d[name]];
               }).filter(function(d) {
                   return d[1];
               }).reverse();
