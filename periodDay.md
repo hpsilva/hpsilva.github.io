@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Market Snapshot
 ---
 <meta charset="utf-8">
