@@ -8,12 +8,14 @@ title: Market Snapshot
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     
+    /*
     body {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     margin: 30px auto;
     width: 1280px;
     position: relative;
     }
+    */
     
     header {
       padding: 6px 0;
@@ -24,7 +26,7 @@ title: Market Snapshot
     }
     
     .axis {
-      font: 10px sans-serif;
+      font: 8px sans-serif;
       position: fixed;
       pointer-events: none;
       z-index: 2;
