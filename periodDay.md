@@ -113,9 +113,11 @@
     // Create Context
     var context = cubism.context()
         .serverDelay(0) // Collection lag
-        .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(1370) // Number of Observation to parse
+        .step(24 * 60 * 60 * 1000) // step(60 * 60 * 1000) - sixty minutes per value
+        .size(1290) // Number of Observation to parse
         .stop();
+        
+    alert( cubism.context().size )
     
     // Add Ruler
     d3.select("body").selectAll(".axis")
