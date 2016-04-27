@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Market Snapshot
 ---
 <meta charset="utf-8">
 
