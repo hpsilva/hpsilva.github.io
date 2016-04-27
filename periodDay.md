@@ -117,7 +117,7 @@
         .size(1290) // Number of Observation to parse
         .stop();
         
-    alert( cubism.context().size )
+    alert( 'Bit of patience required...' )
     
     // Add Ruler
     d3.select("body").selectAll(".axis")
@@ -169,7 +169,7 @@
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[400][1],
+                  compare = rows[0][1],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
