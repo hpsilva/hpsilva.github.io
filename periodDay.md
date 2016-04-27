@@ -114,7 +114,7 @@
     var context = cubism.context()
         .serverDelay(0) // Collection lag
         .step(864e5) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(1290) // Number of Observation to parse
+        .size(1370) // Number of Observation to parse
         .stop();
     
     // Add Ruler
