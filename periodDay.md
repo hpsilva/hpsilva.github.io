@@ -147,7 +147,7 @@ subtitle: This is a subtitle
                 'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR', 'WHEAT_USD', 'WTICO_USD',
                 'XAG_AUD', 'XAG_CAD', 'XAG_CHF', 'XAG_EUR', 'XAG_GBP', 'XAG_HKD', 'XAG_JPY', 'XAG_NZD', 'XAG_SGD', 'XAG_USD',
                 'XAU_AUD', 'XAU_CAD', 'XAU_CHF', 'XAU_EUR', 'XAU_GBP', 'XAU_HKD', 'XAU_JPY', 'XAU_NZD', 'XAU_SGD', 'XAU_USD',
-                'XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'ZAR_JPY'].map(stock))
+                'XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD'].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
       .call(context.horizon()
