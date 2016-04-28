@@ -13,7 +13,7 @@ navbar-links:
     - Market Sentiment: "sentiment"
     - Correlations: "correlations"
     - Period of day: "periodDay"
-  Accounts: "systems"
+  Systems: "systems"
   About: "about"
   LOGIN: "http://hpsilva.io"
 
