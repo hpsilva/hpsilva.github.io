@@ -2,11 +2,6 @@
 url: "http://hpsilva.github.io"
 baseurl: ""
 
-title: hpsilva
-
-description: On Finance...
-
-
 # --- Navigation bar options --- #
 #avatar: "https://avatars2.githubusercontent.com/u/11724991?v=3&s=460"
 
@@ -20,7 +15,6 @@ navbar-links:
     - Period of day: "periodDay"
   Accounts: "accounts"
   About: "about"
-  Contact: "contact"
   LOGIN: "http://hpsilva.io"
 
 
