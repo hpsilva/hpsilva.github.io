@@ -11,14 +11,15 @@ description: On Finance...
 #avatar: "https://avatars2.githubusercontent.com/u/11724991?v=3&s=460"
 
 navbar-links:
-  About Me: "about"
+  
   Blog: "http://hpsilva.io"
-  Accounts: "accounts"
   Resources:
     - Market Snapshot: "snapshot"
     - Market Sentiment: "sentiment"
     - Correlations: "correlations"
     - Period of day: "periodDay"
+  Accounts: "accounts"
+  About: "about"
   Contact: "contact"
   LOGIN: "http://hpsilva.io"
 
