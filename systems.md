@@ -1,4 +1,5 @@
 ---
 layout: page
-googlefonts: Lobster
+title: Current Systems
+published: true
 ---
