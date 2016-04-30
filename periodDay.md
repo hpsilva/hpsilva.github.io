@@ -102,7 +102,7 @@ title: Market Snapshot
     
     .line {
       background: #000;
-      z-index: 2;
+      z-index: 1;
     }
   </style>
   
