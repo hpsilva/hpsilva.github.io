@@ -24,7 +24,7 @@ title: Market Snapshot
     background-image: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
     background-image: -ms-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
     top: 0px;
-    padding: 0 0 24px 0;
+    padding: 0 0 0px 0;
   }
   
   .axis.bottom {
@@ -34,7 +34,7 @@ title: Market Snapshot
     background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
     background-image: -ms-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
     bottom: 0px;
-    padding: 24px 0 0 0;
+    padding: 0px 0 0 0;
   }
   
   .horizon {
