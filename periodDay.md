@@ -7,7 +7,6 @@ title: Market Snapshot
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-    /*@import url(/js/cubism/style.css);*/
     
     body {
     font-family: "Yanone Kaffeesatz";
@@ -109,7 +108,7 @@ title: Market Snapshot
   <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
 </head>
 
-<body id="demo">
+<div id="demo">
   <script>
     // Create Context
     var context = cubism.context()
@@ -121,19 +120,19 @@ title: Market Snapshot
     alert( 'Bit of patience required...' )
     
     // Add Ruler
-    d3.select("body").selectAll(".axis")
+    d3.select("#demo").selectAll(".axis")
         .data(["top", "bottom"])
       .enter().append("div")
         .attr("class", function(d) { return d + " axis"; })
         .each(function(d) { d3.select(this).call(context.axis().ticks(12).orient(d)); });
     
     // Add vertical line
-    d3.select("body").append("div")
+    d3.select("#demo").append("div")
         .attr("class", "rule")
         .call(context.rule());
     
     // Plot Horizon Graphs
-    d3.select("body").selectAll(".horizon")
+    d3.select("#demo").selectAll(".horizon")
         .data([ 'DE10YB_EUR', 'UK10YB_GBP', 'USB02Y_USD', 'USB05Y_USD', 'USB10Y_USD', 'USB30Y_USD',
                 'AU200_AUD', 'CH20_CHF', 'DE30_EUR', 'EU50_EUR', 'FR40_EUR', 'HK33_HKD', 'SG30_SGD',
                 'JP225_USD', 'NAS100_USD', 'NL25_EUR', 'SPX500_USD', 'UK100_GBP', 'US2000_USD', 'US30_USD',
@@ -176,4 +175,4 @@ title: Market Snapshot
     }
 
   </script>
-</body>
+</div>
