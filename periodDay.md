@@ -54,12 +54,15 @@ title: Market Snapshot
     display: block;
   }
   
-  .horizon .title,
-  .horizon .value {
-    position: absolute;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    white-space: nowrap;
-  }
+.horizon .title,
+.horizon .value {
+  bottom: 0;
+  line-height: 0px;
+  margin: 0 0px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  white-space: nowrap;
+}
   
   .horizon .title {
     left: 0;
