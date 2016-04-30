@@ -167,7 +167,7 @@ title: Market Snapshot
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[0][252],
+                  compare = rows[0][1],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
