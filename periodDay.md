@@ -11,11 +11,10 @@ title: Market Snapshot
     
     /*
     body {
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 10px;
-      margin: 30px auto;
-      width: 1280px;
-      position: relative;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 30px auto;
+    width: 1280px;
+    position: relative;
     }
   
     header {
@@ -106,7 +105,8 @@ title: Market Snapshot
     .line {
       background: #000;
       z-index: 2;
-    } */
+    }
+    */
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
@@ -142,7 +142,7 @@ title: Market Snapshot
                 'AU200_AUD', 'CH20_CHF', 'DE30_EUR', 'EU50_EUR', 'FR40_EUR', 'HK33_HKD', 'SG30_SGD',
                 'JP225_USD', 'NAS100_USD', 'NL25_EUR', 'SPX500_USD', 'UK100_GBP', 'US2000_USD', 'US30_USD',
                 'BCO_USD', 'CORN_USD','NATGAS_USD', 'SOYBN_USD', 'SUGAR_USD', 'WHEAT_USD', 'WTICO_USD', 
-                'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 'EUR_USD'
+                'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 
                 'USD_CNH', 'USD_CZK', 'USD_DKK', 'USD_HKD', 'USD_HUF', 'USD_INR', 'USD_JPY', 'USD_MXN',
                 'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR' ].map(stock))
       .enter().insert("div", ".bottom")
@@ -167,7 +167,7 @@ title: Market Snapshot
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[0][1],
+                  compare = rows[0][252],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
@@ -181,4 +181,3 @@ title: Market Snapshot
 
   </script>
 </body>
-
