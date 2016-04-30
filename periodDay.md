@@ -16,24 +16,18 @@ title: Market Snapshot
     font-family: "Yanone Kaffeesatz";
     font-size:12px;
     }
-    
+  
+  /*
   .group {
     margin-bottom: 1em;
   }
+  */
   
   .axis {
     font: 10px sans-serif;
     position: fixed;
     pointer-events: none;
     z-index: 2;
-  }
-  
-  .axis text {
-    -webkit-transition: fill-opacity 250ms linear;
-  }
-  
-  .axis path {
-    display: none;
   }
   
   .axis line {
