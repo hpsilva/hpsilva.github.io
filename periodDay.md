@@ -143,7 +143,7 @@ title: Market Snapshot
                 'AU200_AUD', 'CH20_CHF', 'DE30_EUR', 'EU50_EUR', 'FR40_EUR', 'HK33_HKD', 'SG30_SGD',
                 'JP225_USD', 'NAS100_USD', 'NL25_EUR', 'SPX500_USD', 'UK100_GBP', 'US2000_USD', 'US30_USD',
                 'BCO_USD', 'CORN_USD','NATGAS_USD', 'SOYBN_USD', 'SUGAR_USD', 'WHEAT_USD', 'WTICO_USD', 
-                'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 
+                'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 'EUR_USD'
                 'USD_CNH', 'USD_CZK', 'USD_DKK', 'USD_HKD', 'USD_HUF', 'USD_INR', 'USD_JPY', 'USD_MXN',
                 'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR' ].map(stock))
       .enter().insert("div", ".bottom")
