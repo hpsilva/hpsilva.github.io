@@ -117,7 +117,7 @@ title: Market Snapshot
     var context = cubism.context()
         .serverDelay(0) // Collection lag
         .step(24 * 60 * 60 * 1000) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(700) // 1420 Number of Observation to parse
+        .size(725) // 1420 Number of Observation to parse
         .stop();
         
     alert( 'Bit of patience required...' )
