@@ -17,24 +17,6 @@ title: Market Snapshot
     font-size:12px;
     }
   
-  /*
-  .group {
-    margin-bottom: 1em;
-  }
-  */
-  
-  .axis {
-    font: 10px sans-serif;
-    position: fixed;
-    pointer-events: none;
-    z-index: 2;
-  }
-  
-  .axis line {
-    stroke: #000;
-    shape-rendering: crispEdges;
-  }
-  
   .axis.top {
     background-image: linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
     background-image: -o-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
