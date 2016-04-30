@@ -12,7 +12,8 @@ title: Market Snapshot
     
     body {
     font-family: "Yanone Kaffeesatz";
-    margin: 30px auto;
+    margin: 30px;
+
     
     }
   /*
