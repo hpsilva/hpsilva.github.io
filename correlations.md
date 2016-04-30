@@ -8,5 +8,5 @@ title: Correlations
 </style>
 
 <div>
-    <iframe src="https://bost.ocks.org/mike/cubism/intro/demo-stocks.html" style="border:none" noresize="resize" width="1400" height="600" align='middle'></iframe>
+    <iframe src="https://bost.ocks.org/mike/cubism/intro/demo-stocks.html" style="border:none" noresize="resize" width="900" height="600" align='middle' scrolling='no'></iframe>
 </div>
