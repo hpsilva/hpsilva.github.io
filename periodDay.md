@@ -41,6 +41,7 @@ title: Market Snapshot
       shape-rendering: crispEdges;
     }
     
+    /*
     .axis.top {
       background-image: linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
       background-image: -o-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
@@ -60,6 +61,7 @@ title: Market Snapshot
       bottom: 0px;
       padding: 24px 0 0 0;
     }
+    
     
     .horizon {
       border-bottom: solid 1px #000;
@@ -102,6 +104,7 @@ title: Market Snapshot
       background: #000;
       z-index: 2;
     }
+    */
     
   </style>
   
