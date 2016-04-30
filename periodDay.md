@@ -17,6 +17,11 @@ title: Market Snapshot
     position: relative;
     }
     */
+    
+    body {
+    font-family: sans-serif;
+    font-size: 10px;
+   }
   
     header {
       padding: 6px 0;
