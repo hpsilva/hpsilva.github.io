@@ -15,7 +15,7 @@ title: Market Snapshot
     
     #demo {
     font-family: "Yanone Kaffeesatz";
-    font-size: 10px;
+    font-size: 8px;
     }
     
     .group {
@@ -117,7 +117,7 @@ title: Market Snapshot
     var context = cubism.context()
         .serverDelay(0) // Collection lag
         .step(24 * 60 * 60 * 1000) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(740) // 1420 Number of Observation to parse
+        .size(750) // 1420 Number of Observation to parse
         .stop();
         
     alert( 'Bit of patience required...' )
