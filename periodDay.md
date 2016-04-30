@@ -13,7 +13,7 @@ title: Market Snapshot
     body {
     font-family: "Yanone Kaffeesatz";
     margin: 30px auto;
-    width: 700px; /*1280*/
+    width: 1280px; /*1280*/
     position: relative;
 
     
