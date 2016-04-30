@@ -22,6 +22,7 @@ title: Market Snapshot
       margin-bottom: 1em;
     }
     
+    /*
     .axis {
       font: 8px sans-serif;
       position: fixed;
@@ -61,6 +62,7 @@ title: Market Snapshot
       bottom: 0px;
       padding: 24px 0 0 0;
     }
+    */
     
     .horizon {
       border-bottom: solid 1px #000;
