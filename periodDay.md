@@ -21,12 +21,11 @@ title: Market Snapshot
       margin-bottom: 1em;
     }
     
-    /*
     .axis {
       font: 8px sans-serif;
       position: fixed;
       pointer-events: none;
-      z-index: 2;
+      z-index: 0;
     }
     
     .axis text {
@@ -41,27 +40,6 @@ title: Market Snapshot
       stroke: #000;
       shape-rendering: crispEdges;
     }
-    
-    .axis.top {
-      background-image: linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -o-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -ms-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
-      top: 0px;
-      padding: 0 0 24px 0;
-    }
-    
-    .axis.bottom {
-      background-image: linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -o-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -moz-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
-      background-image: -ms-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
-      bottom: 0px;
-      padding: 24px 0 0 0;
-    }
-    */
     
     .horizon {
       border-bottom: solid 1px #000;
