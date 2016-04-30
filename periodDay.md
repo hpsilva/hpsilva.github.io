@@ -85,7 +85,7 @@ title: Market Snapshot
     .horizon .title,
     .horizon .value {
       bottom: 0;
-      line-height: 30px;
+      line-height: 10px;
       margin: 0 6px;
       position: absolute;
       text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -102,7 +102,7 @@ title: Market Snapshot
     
     .line {
       background: #000;
-      z-index: 1;
+      z-index: 0;
     }
   </style>
   
