@@ -70,18 +70,6 @@ title: Market Snapshot
       white-space: nowrap;
     }
     
-    .horizon .title {
-      left: 0;
-    }
-    
-    .horizon .value {
-      right: 0;
-    }
-    
-    .line {
-      background: #000;
-      z-index: 0;
-    }
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
