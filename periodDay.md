@@ -16,11 +16,12 @@ title: Market Snapshot
     width: 1280px;
     position: relative;
     }
-  /*
+    
     header {
       padding: 6px 0;
     }
     
+    /*
     .group {
       margin-bottom: 1em;
     }
