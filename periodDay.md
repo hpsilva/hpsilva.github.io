@@ -9,14 +9,12 @@ title: Market Snapshot
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     /*@import url(/js/cubism/style.css);*/
     
-    
     body {
     font-family: "Yanone Kaffeesatz";
+    font-size: 10px;
     margin: 30px auto;
-    width: 1280px; /*1280*/
+    width: 1280px;
     position: relative;
-
-    
     }
   /*
     header {
