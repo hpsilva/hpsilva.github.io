@@ -8,4 +8,4 @@ title: Correlations
 </style>
 
 
-<iframe src="https://bost.ocks.org/mike/cubism/intro/demo-stocks.html"></iframe>
+<iframe src="https://bost.ocks.org/mike/cubism/intro/demo-stocks.html" style="border:none" noresize="resize" width="500" height="600"></iframe>
