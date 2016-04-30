@@ -7,9 +7,7 @@ title: Market Snapshot
 <head>
   <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-    @import url(/js/cubism/style.css);
-    
-    /*
+
     body {
     font-family: "Yanone Kaffeesatz";
     }
@@ -104,9 +102,6 @@ title: Market Snapshot
       background: #000;
       z-index: 2;
     }
-    */
-
-    
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
@@ -119,7 +114,7 @@ title: Market Snapshot
     var context = cubism.context()
         .serverDelay(0) // Collection lag
         .step(24 * 60 * 60 * 1000) // step(60 * 60 * 1000) - sixty minutes per value
-        .size(700) // 1420 Number of Observation to parse
+        .size(1420) // 1420 Number of Observation to parse
         .stop();
         
     alert( 'Bit of patience required...' )
