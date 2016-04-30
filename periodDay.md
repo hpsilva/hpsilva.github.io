@@ -15,7 +15,7 @@ title: Market Snapshot
     
     #demo {
     font-family: "Yanone Kaffeesatz";
-    font-size: 8px;
+    font-size:15px;
     }
     
     .group {
