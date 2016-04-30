@@ -9,12 +9,13 @@ title: Market Snapshot
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     @import url(/js/cubism/style.css);
     
+    /*
     body {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 10px;
-    margin: 30px auto;
-    width: 1280px;
-    position: relative;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 10px;
+      margin: 30px auto;
+      width: 1280px;
+      position: relative;
     }
   
     header {
@@ -105,8 +106,7 @@ title: Market Snapshot
     .line {
       background: #000;
       z-index: 2;
-    }
-    
+    } */
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
