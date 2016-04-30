@@ -17,11 +17,6 @@ title: Market Snapshot
     position: relative;
     }
     
-    header {
-      padding: 6px 0;
-    }
-    
-    /*
     .group {
       margin-bottom: 1em;
     }
@@ -107,7 +102,7 @@ title: Market Snapshot
       background: #000;
       z-index: 2;
     }
-    */
+    
   </style>
   
   <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
