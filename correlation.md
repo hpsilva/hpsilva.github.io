@@ -10,7 +10,6 @@ title: Correlations
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 </style>
 
-<title>Correlation Matrix</title>
 <style> @import url(cooccurrence.css); </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
 
