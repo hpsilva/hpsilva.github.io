@@ -3,6 +3,7 @@
 
 
 <style>
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
