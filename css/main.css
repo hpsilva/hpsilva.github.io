@@ -97,12 +97,12 @@ img {
 .navbar-custom {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
-  font-family: 'Yanone Kaffeesatz', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 
