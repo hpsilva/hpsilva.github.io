@@ -126,30 +126,45 @@ d3.select("body").append("div")
     .attr("class", "rule")
     .call(context.rule());
 
+// Plot Horizon Graphs
 d3.select("body").selectAll(".horizon")
-    .data(["AAPL", "BIDU", "SINA", "GOOG", "MSFT", "YHOO", "ADBE", "REDF", "INSP", "IACI", "AVID", "CCUR", "DELL", "DGII", "HPQ", "SGI", "SMCI", "SNDK", "SYNA"].map(stock))
+    .data([ 'DE10YB_EUR', 'UK10YB_GBP', 'USB02Y_USD', 'USB05Y_USD', 'USB10Y_USD', 'USB30Y_USD',
+            'AU200_AUD', 'CH20_CHF', 'DE30_EUR', 'EU50_EUR', 'FR40_EUR', 'HK33_HKD', 'SG30_SGD',
+            'JP225_USD', 'NAS100_USD', 'NL25_EUR', 'SPX500_USD', 'UK100_GBP', 'US2000_USD', 'US30_USD',
+            'BCO_USD', 'CORN_USD','NATGAS_USD', 'SOYBN_USD', 'SUGAR_USD', 'WHEAT_USD', 'WTICO_USD', 
+            'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 
+            'USD_CNH', 'USD_CZK', 'USD_DKK', 'USD_HKD', 'USD_HUF', 'USD_INR', 'USD_JPY', 'USD_MXN',
+            'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR' ].map(stock))
   .enter().insert("div", ".bottom")
     .attr("class", "horizon")
   .call(context.horizon()
-    .format(d3.format("+,.2p")));
+    .format(d3.format("+,.2p"))
+    .height(25));
 
 context.on("focus", function(i) {
   d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
 });
 
-// Replace this with context.graphite and graphite.metric!
+// Create Metrics by Reading from CSV file
 function stock(name) {
-  var format = d3.time.format("%d-%b-%y");
+  var format = d3.time.format("%Y-%m-%d");
   return context.metric(function(start, stop, step, callback) {
-    d3.csv("https://bost.ocks.org/mike/cubism/intro/stocks/" + name + ".csv", function(rows) {
-      rows = rows.map(function(d) { return [format.parse(d.Date), +d.Open]; }).filter(function(d) { return d[1]; }).reverse();
-      var date = rows[0][0], compare = rows[400][1], value = rows[0][1], values = [value];
-      rows.forEach(function(d) {
-        while ((date = d3.time.day.offset(date, 1)) < d[0]) values.push(value);
-        values.push(value = (d[1] - compare) / compare);
+      d3.csv("/js/cubism/snapshot.csv", function(rows) {
+          rows = rows.map(function(d) {
+              return [format.parse(d.Date), +d[name]];
+          }).filter(function(d) {
+              return d[1];
+          }).reverse();
+          var date = rows[0][0],
+              compare = rows[0][1],
+              value = rows[0][1],
+              values = [value];
+          rows.forEach(function(d) {
+              while ((date = d3.time.day.offset(date, 1)) < d[0]) values.push(value);
+              values.push(value = (d[1] - compare) / compare);
+          });
+          callback(null, values.slice(-context.size()));
       });
-      callback(null, values.slice(-context.size()));
-    });
   }, name);
 }
 
