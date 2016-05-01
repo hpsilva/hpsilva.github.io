@@ -12,9 +12,7 @@ navbar-links:
   Resources:
     - Market Snapshot: "snapshot"
     - Market Sentiment: "sentiment"
-    - Correlations: "correlations"
-    - Period of day: "periodDay"
-    - Final: "final"
+    - Correlations: "correlation"
   Systems: "systems"
   About: "about"
   LOGIN: "http://hpsilva.io"
