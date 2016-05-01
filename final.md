@@ -111,8 +111,8 @@ header {
 <script>
 
 var context = cubism.context()
-    .serverDelay(new Date(2012, 4, 2) - Date.now())
-    .step(864e5)
+    .serverDelay(0)
+    .step(24 * 60 * 60 * 1000)
     .size(1280)
     .stop();
 
