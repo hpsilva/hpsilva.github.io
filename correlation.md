@@ -10,9 +10,11 @@ title: Correlations
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
     @import url(http://fonts.googleapis.com/css?family=Droid+Serif|Droid+Serif:b|Droid+Serif:i|Lato|Lato:b|Lato:i);
 
+    /*
     html { min-width: 1000px; }
     
     a { color: #57A; }
+    */
     
     .background { fill: #eee; }
     
