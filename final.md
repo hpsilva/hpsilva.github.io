@@ -136,13 +136,13 @@ header {
     
     // Plot Horizon Graphs
     d3.select("#graph").selectAll(".horizon")
-        .data([ 'DE10YB_EUR', 'UK10YB_GBP', 'USB02Y_USD', 'USB05Y_USD', 'USB10Y_USD', 'USB30Y_USD',
-                'AU200_AUD', 'CH20_CHF', 'DE30_EUR', 'EU50_EUR', 'FR40_EUR', 'HK33_HKD', 'SG30_SGD',
-                'JP225_USD', 'NAS100_USD', 'NL25_EUR', 'SPX500_USD', 'UK100_GBP', 'US2000_USD', 'US30_USD',
-                'BCO_USD', 'CORN_USD','NATGAS_USD', 'SOYBN_USD', 'SUGAR_USD', 'WHEAT_USD', 'WTICO_USD', 
-                'XAG_USD', 'XAU_USD','XAU_XAG', 'XCU_USD', 'XPD_USD', 'XPT_USD', 'USD_CAD', 'USD_CHF', 
-                'USD_CNH', 'USD_CZK', 'USD_DKK', 'USD_HKD', 'USD_HUF', 'USD_INR', 'USD_JPY', 'USD_MXN',
-                'USD_NOK', 'USD_PLN', 'USD_SAR', 'USD_SEK', 'USD_SGD', 'USD_THB', 'USD_TRY', 'USD_ZAR' ].map(stock))
+        .data([ 'Bund', 'UK 10Y Gilt', 'US 2Y T-Note', 'US 5Y T-Note', 'US 10Y T-Note', 'US T-Bond', 'Australia 200',
+                'Germany 30', 'Europe 50', 'France 40', 'Hong Kong 33', 'Japan 225', 'Netherlands 25', 'Singapore 30',
+                'Swiss 20', 'UK 100', 'US Nas 100', 'US SPX 500', 'US Russ 2000', 'US Wall St 30', 'Brent Crude Oil',
+                'Corn', 'Natural Gas', 'Soybeans', 'Sugar', 'Wheat', 'West Texas Oil', 'Copper', 'Gold', 'Gold/Silver',
+                'Palladium', 'Platinum', 'Silver', 'EUR/USD', 'USD/CAD', 'USD/CHF', 'USD/CNH', 'USD/CZK', 'USD/DKK',
+                'USD/HKD', 'USD/HUF', 'USD/INR', 'USD/JPY', 'USD/MXN', 'USD/NOK', 'USD/PLN', 'USD/SAR', 'USD/SEK',
+                'USD/SGD', 'USD/THB', 'USD/TRY', 'USD/ZAR'].map(stock))
       .enter().insert("div", ".bottom")
         .attr("class", "horizon")
       .call(context.horizon()
