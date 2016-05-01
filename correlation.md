@@ -50,15 +50,9 @@ title: Correlations
     
     .miner h1 { color: #430; }
     
-    
     .miner body {
-      background: #f7fff0;
       color: #430;
-      font-family: "Lato", sans-serif;
-      margin: 1em auto 4em auto;
-      position: relative;
-      width: 950px;
-    }
+      }
     
     
 </style>
