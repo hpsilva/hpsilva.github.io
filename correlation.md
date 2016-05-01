@@ -67,10 +67,7 @@ title: Correlations
         if (error) return console.warn(error);
         graph = json;
         draw_matrix_heat_map(graph, 900, 900, "#matrix");
-            //,function (group_num) { var groups = ["", "Whig", "Democratic", "Republican", "Democratic-Republican", "Federalist"]; return groups[group_num]; },
-            //function (name) { return name.substring(0,4) + "\n" + name.substring(5,30); }
-        //);
     });
 </script>
 
-<h6>Viz powered by <a href="http://d3js.org/">d3.js</a> from <a href="http://bost.ocks.org/">Mike Bostock</h6>.
+<h6><a href="http://d3js.org/">d3.js</a></h6>
