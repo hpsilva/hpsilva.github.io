@@ -50,7 +50,7 @@ title: Correlations
     
     .miner h1 { color: #430; }
     
-    /*
+    
     .miner body {
       background: #f7fff0;
       color: #430;
@@ -59,7 +59,7 @@ title: Correlations
       position: relative;
       width: 950px;
     }
-    */
+    
     
 </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
