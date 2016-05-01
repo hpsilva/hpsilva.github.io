@@ -29,6 +29,7 @@ title: Correlations
     body > p { width: 700px; }
     
     svg { font: 9px sans-serif; }
+    */
     
     .axis path, .axis line {
       fill: none;
@@ -45,6 +46,7 @@ title: Correlations
         letter-spacing: -.05em;
     }
     
+    /*
     .miner aside, .miner h1 { font-family: "Lato", sans-serif; }
     
     .miner h1 { color: #430; }
