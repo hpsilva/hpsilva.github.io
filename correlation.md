@@ -63,7 +63,7 @@ title: Correlations
 
 <script>
     var graph;
-    d3.json("/js/correlation/correlation.json", function(error, json) {
+    d3.json("/js/correlation/correlatio.json", function(error, json) {
         if (error) return console.warn(error);
         graph = json;
         draw_matrix_heat_map(graph, 900, 900, "#matrix");
@@ -73,4 +73,4 @@ title: Correlations
     });
 </script>
 
-<h6>This dynamic visualization uses <a href="http://d3js.org/">d3.js</a> by <a href="http://bost.ocks.org/">Mike Bostock</h6>.
+<h6>This viz is powered by <a href="http://d3js.org/">d3.js</a> from <a href="http://bost.ocks.org/">Mike Bostock</h6>.
