@@ -46,12 +46,8 @@ title: Correlations
     .miner body {
       color: #430;
       }
-    
-    
 </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
-
-<p>A text paragraph</a></i>.
 
 <p>Sort by: <select id="matrixsortorder">
   <option value="alphabetic">Alphabetic</option>
@@ -77,5 +73,4 @@ title: Correlations
     });
 </script>
 
-<p>This dynamic visualization uses <a href="http://d3js.org/">d3.js</a> by <a href="http://bost.ocks.org/">Mike Bostock</a>.
-</aside>
+<h6>This dynamic visualization uses <a href="http://d3js.org/">d3.js</a> by <a href="http://bost.ocks.org/">Mike Bostock</h6>.
