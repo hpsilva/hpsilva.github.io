@@ -28,17 +28,6 @@ title: Correlations
     
     body > p { width: 700px; }
     
-    */
-    
-    .miner body {
-      background: #f7fff0;
-      color: #430;
-      font-family: "Lato", sans-serif;
-      margin: 1em auto 4em auto;
-      position: relative;
-      width: 950px;
-    }
-    
     svg { font: 9px sans-serif; }
     
     .axis path, .axis line {
@@ -59,6 +48,17 @@ title: Correlations
     .miner aside, .miner h1 { font-family: "Lato", sans-serif; }
     
     .miner h1 { color: #430; }
+    
+    */
+    
+    .miner body {
+      background: #f7fff0;
+      color: #430;
+      font-family: "Lato", sans-serif;
+      margin: 1em auto 4em auto;
+      position: relative;
+      width: 950px;
+    }
     
     */
 </style>
