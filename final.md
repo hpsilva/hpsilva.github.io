@@ -165,7 +165,7 @@ header {
                   return d[1];
               }).reverse();
               var date = rows[0][0],
-                  compare = rows[-365][1],
+                  compare = rows[610][1],
                   value = rows[0][1],
                   values = [value];
               rows.forEach(function(d) {
