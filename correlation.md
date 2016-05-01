@@ -63,7 +63,7 @@ title: Correlations
 
 <script>
     var graph;
-    d3.json("/js/correlation/correlatio.json", function(error, json) {
+    d3.json("/js/correlation/correlation.json", function(error, json) {
         if (error) return console.warn(error);
         graph = json;
         draw_matrix_heat_map(graph, 900, 900, "#matrix");
