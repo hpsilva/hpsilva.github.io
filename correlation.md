@@ -48,10 +48,9 @@ title: Correlations
     
     /*
     .miner aside, .miner h1 { font-family: "Lato", sans-serif; }
+    */
     
     .miner h1 { color: #430; }
-    
-    */
     
     /*
     .miner body {
