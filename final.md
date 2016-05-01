@@ -2,7 +2,8 @@
 layout: page
 title: Market Snapshot
 ---
-alert( 'Bit of patience required...' )
+<meta charset="utf-8">
+
 <style>
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
@@ -112,6 +113,8 @@ header {
 
 <body id="graph">
   <script>
+    alert( 'On mobile, zoom out...' )
+  
     // Create Context
     var context = cubism.context()
         .serverDelay(0)
@@ -119,12 +122,14 @@ header {
         .size(1280)
         .stop();
     
+    // Add Ruler
     d3.select("#graph").selectAll(".axis")
         .data(["top", "bottom"])
       .enter().append("div")
         .attr("class", function(d) { return d + " axis"; })
         .each(function(d) { d3.select(this).call(context.axis().ticks(12).orient(d)); });
     
+    // Add vertical line
     d3.select("#graph").append("div")
         .attr("class", "rule")
         .call(context.rule());
@@ -144,6 +149,7 @@ header {
         .format(d3.format("+,.2p"))
         .height(25));
     
+    // Set Focus on the Ruler / Axis
     context.on("focus", function(i) {
       d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
     });
