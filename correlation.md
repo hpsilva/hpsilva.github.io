@@ -8,10 +8,12 @@ title: Correlations
 
 <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-
-    
     @import url(http://fonts.googleapis.com/css?family=Droid+Serif|Droid+Serif:b|Droid+Serif:i|Lato|Lato:b|Lato:i);
 
+    /*
+    @import url(cooccurrence.css); 
+    
+    
     html { min-width: 1000px; }
     
     a { color: #57A; }
@@ -58,6 +60,7 @@ title: Correlations
     body > p, li > p { line-height: 1.4em; }
     
     body > p { width: 700px; }
+    */
 </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
 
