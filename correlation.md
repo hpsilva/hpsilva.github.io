@@ -11,12 +11,24 @@ title: Correlations
     @import url(http://fonts.googleapis.com/css?family=Droid+Serif|Droid+Serif:b|Droid+Serif:i|Lato|Lato:b|Lato:i);
 
     /*
-    @import url(cooccurrence.css); 
-    
-    
     html { min-width: 1000px; }
     
     a { color: #57A; }
+    
+    .background { fill: #eee; }
+    
+    h1 {
+        font-size: 48px;
+        letter-spacing: -1px;
+        margin: .3em 0 .1em 0;
+        text-rendering: optimizeLegibility;
+    }
+    
+    body > p, li > p { line-height: 1.4em; }
+    
+    body > p { width: 700px; }
+    
+    */
     
     .miner body {
       background: #f7fff0;
@@ -35,8 +47,6 @@ title: Correlations
       shape-rendering: crispEdges;
     }
     
-    .background { fill: #eee; }
-    
     line { stroke: #fff; }
     
     text.active { 
@@ -50,16 +60,6 @@ title: Correlations
     
     .miner h1 { color: #430; }
     
-    h1 {
-      font-size: 48px;
-      letter-spacing: -1px;
-      margin: .3em 0 .1em 0;
-      text-rendering: optimizeLegibility;
-    }
-    
-    body > p, li > p { line-height: 1.4em; }
-    
-    body > p { width: 700px; }
     */
 </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
