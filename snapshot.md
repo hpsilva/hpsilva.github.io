@@ -113,7 +113,7 @@ header {
 
 <body id="graph">
   <script>
-    alert( 'On mobile, zoom out...' )
+    //alert( 'On mobile, zoom out...' )
   
     // Create Context
     var context = cubism.context()
