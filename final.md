@@ -1,12 +1,13 @@
 ---
 ---
 
+<h2>Market Snapshot</h2>
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Yanone Kaffeesatz;
   font-size: 13px;
   margin: 30px auto;
   width: 1280px;
