@@ -1,4 +1,6 @@
 ---
+layout: page
+title: Market Snapshot
 ---
 
 <h2>Market Snapshot</h2>
