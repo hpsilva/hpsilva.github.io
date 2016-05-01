@@ -1,9 +1,4 @@
----
----
 
-
-<!DOCTYPE html>
-<meta charset="utf-8">
 <style>
 
 body {
@@ -104,8 +99,11 @@ header {
 }
 
 </style>
+
 <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
 <script src="https://square.github.io/cubism/cubism.v1.min.js"></script>
+
+
 <body id="demo">
 <script>
 
