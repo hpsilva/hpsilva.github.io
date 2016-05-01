@@ -73,4 +73,4 @@ title: Correlations
     });
 </script>
 
-<h6>This viz is powered by <a href="http://d3js.org/">d3.js</a> from <a href="http://bost.ocks.org/">Mike Bostock</h6>.
+<h6>Viz powered by <a href="http://d3js.org/">d3.js</a> from <a href="http://bost.ocks.org/">Mike Bostock</h6>.
