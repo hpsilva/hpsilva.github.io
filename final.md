@@ -2,9 +2,7 @@
 layout: page
 title: Market Snapshot
 ---
-
-<h2>Market Snapshot</h2>
-
+alert( 'Bit of patience required...' )
 <style>
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
