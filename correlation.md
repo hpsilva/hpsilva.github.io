@@ -70,4 +70,4 @@ title: Correlations
     });
 </script>
 
-<h6><a href="http://d3js.org/">d3.js</a></h6>
+<h6><a href="http://d3js.org/">@d3.js</a></h6>
