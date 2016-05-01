@@ -8,7 +8,7 @@ title: Correlations
 
 <style>
     @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-    @import url(cooccurrence.css); 
+
     
     @import url(http://fonts.googleapis.com/css?family=Droid+Serif|Droid+Serif:b|Droid+Serif:i|Lato|Lato:b|Lato:i);
 
