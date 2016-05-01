@@ -61,8 +61,6 @@ title: Correlations
 </style>
 <!-- <script src="d3.v2.8.1.min.js"></script> -->
 
-<h1>Correlation Matrix</h1>
-
 <p>A text paragraph</a></i>.
 
 <p>Sort by: <select id="matrixsortorder">
@@ -75,11 +73,11 @@ title: Correlations
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <!-- <script type="text/javascript" src="cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script> -->
-<script src="graphutil.js"></script>
+<script src="/js/correlation/graphutil.js"></script>
 
 <script>
     var graph;
-    d3.json("word_cooccurrence.json", function(error, json) {
+    d3.json("/js/correlation/correlation.json", function(error, json) {
         if (error) return console.warn(error);
         graph = json;
         draw_matrix_heat_map(graph, 900, 900, "#matrix");
