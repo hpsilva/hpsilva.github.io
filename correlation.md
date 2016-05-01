@@ -14,17 +14,18 @@ title: Correlations
     html { min-width: 1000px; }
     
     a { color: #57A; }
+    */
     
     .background { fill: #eee; }
     
-    */
-    
+    /*
     h1 {
         font-size: 48px;
         letter-spacing: -1px;
         margin: .3em 0 .1em 0;
         text-rendering: optimizeLegibility;
     }
+    */
     
     body > p, li > p { line-height: 1.4em; }
     
