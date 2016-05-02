@@ -6,6 +6,14 @@ title: Correlation Map
 <meta charset="utf-8">
 
 <style>
+  textarea {
+    font-size: 100%;
+  }
+
+  svg {
+     font: 10px sans-serif;
+  }
+
   .background {
     fill: #eee;
   }
