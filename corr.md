@@ -6,130 +6,7 @@ title: Correlation Map
 <meta charset="utf-8">
 
 <style>
-  @import url(//fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
-
-  html {
-    min-width: 1040px;
-  }
-  
-  .attribution {
-    font-size: small;
-    margin-bottom: 2em;
-  }
-  
-  body > p, li > p {
-    line-height: 1.5em;
-  }
-  
-  body > p {
-    width: 720px;
-  }
-  
-  body > blockquote {
-    width: 640px;
-  }
-  
-  blockquote q {
-    display: block;
-    font-style: oblique;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    width: 690px;
-    margin-left: 30px;
-  }
-  
-  a {
-    color: steelblue;
-  }
-  
-  a:not(:hover) {
-    text-decoration: none;
-  }
-  
-  pre, code, textarea {
-    font-family: "Menlo", monospace;
-  }
-  
-  code {
-    line-height: 1em;
-  }
-  
-  textarea {
-    font-size: 100%;
-  }
-  
-  body > pre {
-    border-left: solid 2px #ccc;
-    padding-left: 18px;
-    margin: 2em 0 2em -20px;
-  }
-  
-  .html .value,
-  .javascript .string,
-  .javascript .regexp {
-    color: #756bb1;
-  }
-  
-  .html .tag,
-  .css .tag,
-  .javascript .keyword {
-    color: #3182bd;
-  }
-  
-  .comment {
-    color: #636363;
-  }
-  
-  .html .doctype,
-  .javascript .number {
-    color: #31a354;
-  }
-  
-  .html .attribute,
-  .css .attribute,
-  .javascript .class,
-  .javascript .special {
-    color: #e6550d;
-  }
-  
-  svg {
-    font: 10px sans-serif;
-  }
-  
-  .axis path, .axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-  }
-  
-  sup, sub {
-    line-height: 0;
-  }
-  
-  q:before {
-    content: "“";
-  }
-  
-  q:after {
-    content: "”";
-  }
-  
-  blockquote q {
-    line-height: 1.5em;
-    display: inline;
-  }
-  
-  blockquote q:before,
-  blockquote q:after {
-    content: "";
-  }
-
-  /* INLINE CSS */
+   /* INLINE CSS */
   .background {
     fill: #eee;
   }
@@ -150,8 +27,10 @@ title: Correlation Map
   <option value="count">by Frequency</option>
   <option value="group">by Cluster</option>
 </select>
-  
-<script>
+
+
+
+<div id='graph'>
   var margin = {top: 80, right: 0, bottom: 10, left: 80},
       width = 720,
       height = 720;
@@ -160,7 +39,7 @@ title: Correlation Map
       z = d3.scale.linear().domain([0, 4]).clamp(true),
       c = d3.scale.category10().domain(d3.range(10));
   
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#graph").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .style("margin-left", -margin.left + "px")
@@ -287,4 +166,4 @@ title: Correlation Map
       d3.select("#order").property("selectedIndex", 2).node().focus();
     }, 5000);
   });
-</script>
+</div>
