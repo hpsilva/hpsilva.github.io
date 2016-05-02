@@ -17,10 +17,10 @@ title: Correlation Map
 
 <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
 
-<p>Order: <select id="order">
-  <option value="name">by Name</option>
-  <option value="count">by Frequency</option>
-  <option value="group">by Cluster</option>
+<p>Order by: <select id="order">
+  <option value="name">Name</option>
+  <option value="count">Frequency</option>
+  <option value="group">Cluster</option>
 </select>
 
 <div id="graph"></div>
