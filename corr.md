@@ -6,11 +6,6 @@ title: Correlation Map
 <meta charset="utf-8">
 
 <style>
-   /* INLINE CSS */
-  .background {
-    fill: #eee;
-  }
-  
   line {
     stroke: #fff;
   }
@@ -30,7 +25,7 @@ title: Correlation Map
 
 
 
-<div id='graph'>
+<body id='graph'>
   var margin = {top: 80, right: 0, bottom: 10, left: 80},
       width = 720,
       height = 720;
@@ -166,4 +161,4 @@ title: Correlation Map
       d3.select("#order").property("selectedIndex", 2).node().focus();
     }, 5000);
   });
-</div>
+</body>
