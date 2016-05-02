@@ -26,7 +26,7 @@ title: Correlation Map
 <div id="graph"></div>
 
 <script>
-  var margin = {top: 120, right: 0, bottom: 0, left: 80},
+  var margin = {top: 120, right: 0, bottom: 0, left: 120},
       width = 720,
       height = 720;
   
