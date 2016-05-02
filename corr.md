@@ -168,13 +168,12 @@ title: Correlation Map
           .delay(function(d, i) { return x(i) * 4; })
           .attr("transform", function(d, i) { return "translate(" + x(i) + ")rotate(-90)"; });
     }
-    /*
+    
     //Scrolling thru modes
     var timeout = setTimeout(function() {
       order("group");
       d3.select("#order").property("selectedIndex", 2).node().focus();
-    }, 5000);
-    */
+    }, 2000);
     
   });
 </script>
