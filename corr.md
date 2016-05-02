@@ -82,7 +82,6 @@ title: Correlations
     line-height: 20px;
   }
 </style>
-</head>
 
 <div id="tooltip" class="hidden">
   <p><span id="value"></p>
