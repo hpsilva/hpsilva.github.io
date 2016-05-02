@@ -23,10 +23,8 @@ title: Correlation Map
   <option value="group">by Cluster</option>
 </select>
 
-
-
-<body id="graph">
-  var margin = {top: 80, right: 0, bottom: 10, left: 80},
+<body>
+  var margin = {top: 80, right: 80, bottom: 10, left: 80},
       width = 720,
       height = 720;
   
@@ -34,7 +32,7 @@ title: Correlation Map
       z = d3.scale.linear().domain([0, 4]).clamp(true),
       c = d3.scale.category10().domain(d3.range(10));
   
-  var svg = d3.select("#graph").append("svg")
+  var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .style("margin-left", -margin.left + "px")
