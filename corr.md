@@ -83,6 +83,8 @@ title: Correlation Map
   }
 </style>
 
+<p>A paragraph!</p>
+
 <div id="tooltip" class="hidden">
   <p><span id="value"></p>
   <p>A paragraph!</p>
@@ -98,7 +100,9 @@ Order:
   <option value="custom">by log2 ratio</option>
   </select>
   </select>
-<div id="chart" style='overflow:auto;></div>
+<div id="chart">
+<h6>A Paragraph</h6>
+</div>
 
 <script type="text/javascript">
 
