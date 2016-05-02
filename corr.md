@@ -3,4 +3,4 @@ layout: page
 title: Correlations
 ---
 
-{% include head.html %}
+{% include correlation.html %}
