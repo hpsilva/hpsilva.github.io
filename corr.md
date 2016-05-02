@@ -26,7 +26,7 @@ title: Correlation Map
 <div id="graph"></div>
 
 <script>
-  var margin = {top: 80, right: 0, bottom: 10, left: 0},
+  var margin = {top: 120, right: 0, bottom: 0, left: 80},
       width = 720,
       height = 720;
   
@@ -70,7 +70,7 @@ title: Correlation Map
       group: d3.range(n).sort(function(a, b) { return nodes[b].group - nodes[a].group; })
     };
   
-    // The default sort order.
+    // DEFAULT SORTING MDOE
     x.domain(orders.name);
   
     svg.append("rect")
@@ -138,7 +138,8 @@ title: Correlation Map
       clearTimeout(timeout);
       order(this.value);
     });
-  
+    
+    // FUNCTION SORT BY VALUE
     function order(value) {
       x.domain(orders[value]);
   
@@ -156,6 +157,7 @@ title: Correlation Map
           .attr("transform", function(d, i) { return "translate(" + x(i) + ")rotate(-90)"; });
     }
   
+    //Scrolling thru modes
     var timeout = setTimeout(function() {
       order("group");
       d3.select("#order").property("selectedIndex", 2).node().focus();
