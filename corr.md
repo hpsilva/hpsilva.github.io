@@ -6,41 +6,28 @@ title: Correlation Map
 <meta charset="utf-8">
 
 <style>
-@import url(/style.css);
-
-.background {
-  fill: #eee;
-}
-
-line {
-  stroke: #fff;
-}
-
-text.active {
-  fill: red;
-}
+  @import url(/style.css);
+  
+  .background {
+    fill: #eee;
+  }
+  
+  line {
+    stroke: #fff;
+  }
+  
+  text.active {
+    fill: red;
+  }
 </style>
 
 <script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
 
-<header>
-  <aside>April 10, 2012</aside>
-  <a href="../" rel="author">Mike Bostock</a>
-</header>
-
-<h1><i>Les Misérables</i> Co-occurrence</h1>
-
-<aside style="margin-top:80px;">
-  <p>Order: <select id="order">
-    <option value="name">by Name</option>
-    <option value="count">by Frequency</option>
-    <option value="group">by Cluster</option>
-  </select>
-  
-  <p>This matrix diagram visualizes character co-occurrences in Victor Hugo’s <i><a href="http://en.wikipedia.org/wiki/Les_Misérables">Les Misérables</a></i>.
-  
-  <p>Built with <a href="http://d3js.org/">d3.js</a>.
-</aside>
+<p>Order: <select id="order">
+  <option value="name">by Name</option>
+  <option value="count">by Frequency</option>
+  <option value="group">by Cluster</option>
+</select>
 
 <script>
 
