@@ -181,12 +181,3 @@ d3.json("/js/correlation/miserables.json", function(miserables) {
 });
 
 </script>
-
-<p class="attribution">Source: <a href="http://www-cs-staff.stanford.edu/~uno/sgb.html">The Stanford GraphBase</a>.
-
-<footer>
-  <aside>January 12, 2012</aside>
-  <a href="../" rel="author">Mike Bostock</a>
-</footer>
-
-<script>
