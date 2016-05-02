@@ -13,6 +13,7 @@ navbar-links:
     - Market Snapshot: "snapshot"
     - Market Sentiment: "sentiment"
     - Correlations: "correlation"
+    - Correlations2: 'corr'
   Systems: "systems"
   About: "about"
   LOGIN: "http://hpsilva.io"
