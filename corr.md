@@ -172,7 +172,7 @@ title: Correlation Map
     //Scrolling thru modes
     var timeout = setTimeout(function() {
       order("group");
-      d3.select("#order").property("selectedIndex", 2).node().focus();
+      d3.select("#order").property("selectedIndex", 1).node().focus();
     }, 2000);
     
   });
