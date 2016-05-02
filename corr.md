@@ -6,6 +6,10 @@ title: Correlation Map
 <meta charset="utf-8">
 
 <style>
+  .background {
+    fill: #eee;
+  }
+  
   line {
     stroke: #fff;
   }
