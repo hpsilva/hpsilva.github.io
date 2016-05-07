@@ -134,9 +134,9 @@ title: Correlation Map
           .style("fill-opacity", function(d) { return z(d.z); })
           .style("fill", function(d) { 
             return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; 
-            console.log(nodes[d.x])
-            console.log(nodes[d.y])
-            console.log(nodes[d.z])
+            alert(nodes[d.x])
+            alert(nodes[d.y])
+            alert(nodes[d.z])
           })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
