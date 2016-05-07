@@ -133,13 +133,14 @@ title: Correlation Map
           .attr("height", x.rangeBand())
           .style("fill-opacity", function(d) { return z(d.z); })
           .style("fill", function(d) { 
-            alert(nodes[d.x]);
-            alert(nodes[d.y]);
-            alert(nodes[d.z]);
             return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; 
           })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
+          
+          alert(nodes[d.x]);
+          alert(nodes[d.y]);
+          alert(nodes[d.z]);
     }
   
     function mouseover(p) {
