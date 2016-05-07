@@ -131,7 +131,7 @@ title: Correlation Map
           .attr("x", function(d) { return x(d.x); })
           .attr("width", x.rangeBand())
           .attr("height", x.rangeBand())
-          //.style("fill-opacity", function(d) { return z(d.z); })
+          .style("fill-opacity", function(d) { return z(d.z); })
           //.style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
