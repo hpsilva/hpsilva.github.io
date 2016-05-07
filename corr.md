@@ -124,9 +124,7 @@ title: Correlation Map
         .text(function(d, i) { return nodes[i].name; });
   
     function row(row) {
-      console.log(nodes[d.x]);
-      console.log(nodes[d.y]);
-      console.log(nodes[d.z]);
+      alert(row)
       var cell = d3.select(this).selectAll(".cell")
           .data(row.filter(function(d) { return d.z; }))
         .enter().append("rect")
