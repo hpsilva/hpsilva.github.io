@@ -124,6 +124,9 @@ title: Correlation Map
         .text(function(d, i) { return nodes[i].name; });
   
     function row(row) {
+      console.log(nodes[d.x]);
+      console.log(nodes[d.y]);
+      console.log(nodes[d.z]);
       var cell = d3.select(this).selectAll(".cell")
           .data(row.filter(function(d) { return d.z; }))
         .enter().append("rect")
@@ -137,10 +140,6 @@ title: Correlation Map
           })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
-          
-          alert(nodes[d.x]);
-          alert(nodes[d.y]);
-          alert(nodes[d.z]);
     }
   
     function mouseover(p) {
