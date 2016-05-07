@@ -1,5 +1,6 @@
 {
-    "baseTemperature: 0monthlyVariance": [
+    "baseTemperature": 0, 
+    "monthlyVariance": [
         {
             "month": 0, 
             "value": 1.0, 
