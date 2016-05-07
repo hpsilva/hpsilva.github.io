@@ -125,8 +125,8 @@ title: Correlation Map
   
     alert(row)
     alert(matrix)
-    alert(link)
-      
+    alert(linkds)
+    
     function row(row) {
       var cell = d3.select(this).selectAll(".cell")
           .data(row.filter(function(d) { return d.z; }))
