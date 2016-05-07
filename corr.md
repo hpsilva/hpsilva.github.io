@@ -123,8 +123,11 @@ title: Correlation Map
         .attr("text-anchor", "start")
         .text(function(d, i) { return nodes[i].name; });
   
+    alert(row)
+    alert(matrix)
+    alert(link)
+      
     function row(row) {
-      alert(row)
       var cell = d3.select(this).selectAll(".cell")
           .data(row.filter(function(d) { return d.z; }))
         .enter().append("rect")
