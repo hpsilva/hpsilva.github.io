@@ -132,7 +132,12 @@ title: Correlation Map
           .attr("width", x.rangeBand())
           .attr("height", x.rangeBand())
           .style("fill-opacity", function(d) { return z(d.z); })
-          //.style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
+          .style("fill", function(d) { 
+            return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; 
+            console.write(nodes[d.x])
+            console.write(nodes[d.y])
+            console.write(nodes[d.z])
+          })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
     }
