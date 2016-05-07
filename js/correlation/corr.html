@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+	<title>D3 JS Test</title>
+</head>
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<body>
+	<h1>Hello World!</h1>
+	<p>A Javascript and D3.js test</p>
+
+</body>
+
+<script type="text/javascript">
+
+	// JAVASCRIPT WAY
+	var paragraphs = document.getElementsByTagName("p");
+	for (var i = 0; i < paragraphs.length; i++) {
+	  var paragraph = paragraphs.item(i);
+	  paragraph.style.setProperty("color", "grey", null);
+	}
+
+	// D3 SELECT ALL WAY
+	d3.selectAll("h1").style("color", "red");
+
+	// D3 SELECT ONE WAY
+	d3.select("body").style("background-color", "yellow");
+
+	// CREATING NEW NODES - ALL AT ONCE
+	d3.select("body").selectAll("p")
+		.data([1, 2, 3, 4, 5, 6])
+  		.enter().append("p")
+    	.text(function(d) { return "Number " + d; });
+
+	// CREATING NODES - ENTER UPDATE AND EXIT NODES PATT
+		// a. Select
+		var p = d3.select("body").selectAll("p")
+				.data([1, 2, 3, 4, 5, 6])
+	   			 .text(function(d) { return d; });
+
+		// b. Enter…
+		p.enter().append("p")
+		    .text(function(d) { return d; });
+
+		// c. Exit…
+		p.exit().remove();
+
+	// CREATING NEW NODES ONE LINER
+    d3.selectAll("body")
+    	.attr("class", "special")
+	  .append("div")
+	    .html("Hello, world!");
+
+	// TRANSITIONS
+		// a. Fading
+		d3.select("body").transition()
+		.duration(3050)
+	    .style("background-color", "grey");
+
+	    // b. Fading
+	    d3.selectAll("circle").transition()
+		    .duration(750)
+		    .delay(function(d, i) { return i * 10; })
+		    .attr("r", function(d) { return Math.sqrt(d * scale); });
+</script>
+
+
+<!-- CODING A CHART - HTML WAY -->
+<style>
+	.chart div {
+	  font: 10px sans-serif;
+	  background-color: steelblue;
+	  text-align: right;
+	  padding: 3px;
+	  margin: 1px;
+	  color: white;
+	}
+
+</style>
+<br>
+<h2>Chart HTML Way: </h2>
+<div class="chart">
+  <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 150px;">15</div>
+  <div style="width: 160px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 420px;">42</div>
+</div>
+<br>
