@@ -53,7 +53,7 @@
 
 <script>
     var graph;
-    d3.json("correlation.json", function(error, json) {
+    d3.json("https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/js/correlation/corrMatrix.json", function(error, json) {
         if (error) return console.warn(error);
         graph = json;
         draw_matrix_heat_map(graph, 900, 900, "#matrix");
