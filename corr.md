@@ -31,16 +31,16 @@ title: Correlation Map
 
 <p>Order by: <select id="order">
   <option value="name">Name</option>
-  <option value="count">Frequency</option>
-  <option value="group">Cluster</option>
+  <option value="count">Correlation</option>
+  <option value="group">Group</option>
 </select>
 
 <div id="graph"></div>
 
 <script>
-  var margin = {top: 70, right: 0, bottom: 0, left: 60},
-      width = 720,
-      height = 720;
+  var margin = {top: 70, right: 0, bottom: 0, left: 80},
+      width = 900,
+      height = 900;
   
   var x = d3.scale.ordinal().rangeBands([0, width]),
       z = d3.scale.linear().domain([0, 4]).clamp(true),
@@ -53,7 +53,7 @@ title: Correlation Map
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   
-  d3.json("/js/correlation/miserables.json", function(miserables) {
+  d3.json("/js/correlation/corrMatrix.json", function(miserables) {
     var matrix = [],
         nodes = miserables.nodes,
         n = nodes.length;
@@ -131,8 +131,8 @@ title: Correlation Map
           .attr("x", function(d) { return x(d.x); })
           .attr("width", x.rangeBand())
           .attr("height", x.rangeBand())
-          .style("fill-opacity", function(d) { return z(d.z); })
-          .style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
+          //.style("fill-opacity", function(d) { return z(d.z); })
+          //.style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
           .on("mouseover", mouseover)
           .on("mouseout", mouseout);
     }
@@ -155,7 +155,7 @@ title: Correlation Map
     function order(value) {
       x.domain(orders[value]);
   
-      var t = svg.transition().duration(2500);
+      var t = svg.transition().duration(1000);
   
       t.selectAll(".row")
           .delay(function(d, i) { return x(i) * 4; })
