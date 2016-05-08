@@ -1,5 +1,5 @@
 ---
-title: page
+title: Correlation Heatmap
 ---
 
 <style>
@@ -8,7 +8,7 @@ title: page
 body {
   font-family: Yanone Kaffeesatz;
   font-size: 13px;
-  margin: 30px auto;
+  margin: 0px auto;
   width: 1280px;
   position: relative;
 }
