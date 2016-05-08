@@ -12,6 +12,6 @@ title: Correlation Heatmap
 
 <body id="graph">
 
-  <iframe width="1200" height="1200" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" position="fixed" align="middle" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+  <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" frameborder="0" scrolling="no" position="fixed" align="middle" src="https://plot.ly/~hpsilva/34.embed"></iframe>
 </body>
 
