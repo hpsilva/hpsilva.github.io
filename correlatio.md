@@ -5,12 +5,12 @@ title: Correlation Heatmap
 <style>
   @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
   
+  /*
   .chart {
     position: relative;
     left: 250px;
   }
-
-
+  */
 
 </style>
 
