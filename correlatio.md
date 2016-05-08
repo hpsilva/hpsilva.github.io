@@ -23,7 +23,12 @@ title: Correlation Heatmap
    .text("Hello World!")
    .html('<iframe width="1200" height="1200" align="center" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>')
    .attr("align","center")
-
+   .attr("modebar modebar--hover", )
 </script>
 
+<style>
+  .modebar modebar--hover {
+    display: none;
+  }
+</style>
 
