@@ -5,7 +5,7 @@ title: Correlation Heatmap
 <style>
   @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
   
-  #chart {
+  .chart {
     position: relative;
     left: -250px;
   }
@@ -22,7 +22,7 @@ title: Correlation Heatmap
   </script> -->
 
 <section class="chart">
-    <iframe class="chart" width="1200" height="1200" marginwidth="-500" marginheight="0" align="right" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+    <iframe class="chart" width="1200" height="1200" align="right" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
 
 </section>
 
