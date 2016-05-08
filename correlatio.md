@@ -23,6 +23,9 @@ title: Correlation Heatmap
         .call(context.rule());
   </script> -->
 
+<section>
     <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" align="center" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+
+</section>
 
 
