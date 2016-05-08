@@ -3,7 +3,7 @@
 
 <style>
 #chart {
-  position: absolute;
+  position: relative;
   width: 1000px;
   height: 1000px;
   z-index: 15;
