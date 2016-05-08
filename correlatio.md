@@ -1,6 +1,7 @@
 ---
 title: Correlation Heatmap
 ---
+<script src="https://d3js.org/d3.v2.min.js" charset="utf-8"></script>
 
 <style>
   @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
