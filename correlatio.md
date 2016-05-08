@@ -8,14 +8,10 @@ title: Correlation Heatmap
 body {
   font-family: Yanone Kaffeesatz;
   font-size: 13px;
-  margin: 0px auto;
+  margin: 0px;
   width: 1200px;
   position: absolute;
 }
 </style>
 
-<body>
-  <div>
-    <iframe width="1200" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
-  </div>
-</body>
+<iframe width="1200" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
