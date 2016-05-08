@@ -11,7 +11,7 @@ navbar-links:
   Blog: "http://hpsilva.io"
   Resources:
     - Market Snapshot: "snapshot"
-    - Market Sentiment: "sentiment"
+    - Market Sentiment: "correlatio"
     - Correlations: "correlation"
     - Correlations2: 'corr'
   Systems: "systems"
