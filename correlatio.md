@@ -13,6 +13,7 @@ title: Correlation Heatmap
   */
 
   #chart {
+      position: relative
       display: block;
       margin-left: auto;
       margin-right: auto;
