@@ -13,9 +13,9 @@ title: Correlation Heatmap
 </style>
 
 
-<section class="chart">
+<div class="chart">
     <iframe class="chart" width="1200" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
 
-</section>
+</div>
 
 
