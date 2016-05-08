@@ -7,7 +7,7 @@ title: Correlation Heatmap
   
   .chart {
     position: relative;
-    left: -250px;
+    left: 250px;
   }
 
 
