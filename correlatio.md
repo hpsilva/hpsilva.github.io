@@ -6,9 +6,6 @@ title: Correlation Heatmap
 <style>
   @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
   
-    .modebar modebar--hover {
-    display: none;
-  }
 </style>
 
 <body id="chart"></body>
@@ -19,5 +16,8 @@ title: Correlation Heatmap
    .text("Hello World!")
    .html('<iframe width="1200" height="1200" align="center" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>')
    .attr("align","center")
+   
+  var hideBar = d3.selectAll("modebar modebar--hover")
+    .remove()
 </script>
 
