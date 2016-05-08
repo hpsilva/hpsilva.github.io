@@ -12,13 +12,30 @@ title: Correlation Heatmap
   }
   */
 
-  #chart {
-    display:table-cell; 
-    horizontal-align: middle;
-    text-align:center;
-  }
+#chart {
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+}
 
-body > p { width: 1900px; }
+.iframe{
+  width: 200px;
+}
+
+div,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: table;
+}
+
+body > p { width: 1200px; }
 
 </style>
 
