@@ -20,11 +20,9 @@ title: Correlation Heatmap
     d3.select("#graph").append("div")
         .attr("class", "rule")
         .call(context.rule());
+  </script> -->
 
     <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" frameborder="0" scrolling="no" position="fixed" align="middle" src="https://plot.ly/~hpsilva/34.embed"></iframe>
-  
-  </script> -->
-  
-  
+    
 </div>
 
