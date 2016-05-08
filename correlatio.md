@@ -16,7 +16,6 @@ title: Correlation Heatmap
 
 </style>
 
-<div id="chart" style="align=center;">
 <!---
   <script>
     d3.select("#graph").append("div")
@@ -25,6 +24,5 @@ title: Correlation Heatmap
   </script> -->
 
     <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" align="center" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
-    
-</div>
+
 
