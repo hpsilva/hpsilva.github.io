@@ -12,34 +12,11 @@ title: Correlation Heatmap
   }
   */
 
-#chart {
-    text-align: center;
-    width: 100%;
-    vertical-align: middle;
-    height: 100%;
-    display: table-cell;
-}
 
-.iframe{
-  width: 200px;
-}
-
-div,
-body,
-html {
-    height: 100%;
-    width: 100%;
-}
-
-body{
-    display: table;
-}
-
-body > p { width: 1200px; }
 
 </style>
 
-<div id="chart">
+<div id="chart" style="align=right;">
 <!---
   <script>
     d3.select("#graph").append("div")
@@ -47,7 +24,7 @@ body > p { width: 1200px; }
         .call(context.rule());
   </script> -->
 
-    <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+    <iframe width="1200" height="1200" marginwidth="-500" marginheight="0" align="right" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
     
 </div>
 
