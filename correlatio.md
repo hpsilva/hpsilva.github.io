@@ -3,7 +3,15 @@ title: Correlation Heatmap
 ---
 
 <style>
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+  @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+  
+  div, iframe {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+}
 
 
 </style>
