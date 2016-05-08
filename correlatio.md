@@ -4,8 +4,8 @@
 <style>
 #chart {
   position: absolute;
-  width: 300px;
-  height: 200px;
+  width: 1000px;
+  height: 1000px;
   z-index: 15;
   top: 50%;
   left: 50%;
