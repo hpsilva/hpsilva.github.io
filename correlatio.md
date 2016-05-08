@@ -3,7 +3,7 @@
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-
+/*
 body {
   font-family: Yanone Kaffeesatz;
   font-size: 13px;
@@ -11,7 +11,7 @@ body {
   width: 1280px;
   position: relative;
 }
-}
+*/
       
 </style>
 
