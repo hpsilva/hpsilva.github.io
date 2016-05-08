@@ -15,10 +15,6 @@ body {
       
 </style>
 
-
-<body id="chart">
-</body>
-
 <div>
-  <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+  <iframe width="800" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
 </div>
