@@ -9,8 +9,8 @@ body {
   font-family: Yanone Kaffeesatz;
   font-size: 13px;
   margin: 0px auto;
-  width: 1280px;
-  position: relative;
+  width: 1200px;
+  position: absolute;
 }
 </style>
 
