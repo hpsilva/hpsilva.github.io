@@ -21,8 +21,8 @@ title: Correlation Heatmap
    var ifr = d3.select("#chart")
    .append("div")
    .text("Hello World!")
-   .html('<iframe width="1200" height="1200" align="top" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>')
-   .attr("id","words")
+   .html('<iframe width="1200" height="1200" align="center" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>')
+   .attr("align","center")
 
 </script>
 
