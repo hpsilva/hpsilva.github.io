@@ -17,5 +17,5 @@ body {
 </style>
 
 <div>
-  <iframe width="500" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+  <iframe width="1200" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~hpsilva/34.embed"></iframe>
 </div>
