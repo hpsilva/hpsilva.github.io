@@ -13,7 +13,7 @@ title: Correlation Heatmap
   */
 
   #chart {
-      position: relative
+      position: relative;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -24,9 +24,7 @@ body > p { width: 1900px; }
 
 </style>
 
-<script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
-
-<div id="chart">
+<div id="chart" style="display:table-cell; horizontal-align:middle; text-align:center">
 <!---
   <script>
     d3.select("#graph").append("div")
