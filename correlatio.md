@@ -12,10 +12,12 @@ title: Correlation Heatmap
     background-color: #777;
     display:block;
 }
-
-
 </style>
 
-<div align="middle">
-  <iframe width="1200" height="1200" frameborder="0" scrolling="no" align="middle" src="https://plot.ly/~hpsilva/34.embed"></iframe>
-<div>
+<script src="//d3js.org/d3.v2.min.js" charset="utf-8"></script>
+
+<body id="graph">
+
+  <iframe width="1200" height="1200" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" align="middle" src="https://plot.ly/~hpsilva/34.embed"></iframe>
+</body>
+
