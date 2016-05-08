@@ -4,13 +4,13 @@ title: Correlation Heatmap
 ---
 
 <style>
-    html { min-width: 1000px; }
+    body { min-width: 1000px; }
     
     .background { fill: #eee; }
     
     body > p, li > p { line-height: 1.4em; }
     
-    body > p { width: 700px; }
+    body > p { width: 100px; }
       
 </style>
 
