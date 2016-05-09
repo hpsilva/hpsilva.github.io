@@ -109,14 +109,14 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #336699; /*Color*/
+  color: #0066cc; /*Color*/
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #336699; /*Color*/
+  color: #0066cc; /*Color*/
 }
 
 @media only screen and (min-width: 768px) {
@@ -241,7 +241,7 @@ footer {
 }
 
 footer a {
-  color: #336699; /*Color*/
+  color: #0066cc; /*Color*/
 }
 
 footer .list-inline {
