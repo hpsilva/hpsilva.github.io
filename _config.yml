@@ -12,7 +12,6 @@ navbar-links:
   Resources:
     - Market Snapshot: "snapshot"
     - Correlation Heatmap: "correlatio"
-    - Market Sentiment: "http://hpsilva.io"
   Systems: "systems"
   About: "about"
   LOGIN: "http://hpsilva.io"
