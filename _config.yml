@@ -12,6 +12,8 @@ navbar-links:
   Resources:
     - Market Snapshot: "snapshot"
     - Correlation Heatmap: "correlatio"
+    #- Risk Report
+    #- Macro / Fundamentals
   Systems: "systems"
   About: "about"
   LOGIN: "http://hpsilva.io"
