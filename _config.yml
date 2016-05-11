@@ -26,7 +26,7 @@ author:
   facebook: yourname  # eg. daattali
   github: hpsilva    # eg. daattali
   twitter: hpsilva_   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
+  linkedin: hpsilva   # eg. "pub/dean-attali/8/946/143"
   stackoverflow: 5216240/hpsilva  # eg. "3943160/daattali"
  
 # Select which links to show in the footer
@@ -36,7 +36,7 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: true
 
 url-pretty: "hpsilva.io"  # eg. "deanattali.com/beautiful-jekyll"
