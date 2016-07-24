@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Login @ hpsilva.io
 comments: false
 published: true
