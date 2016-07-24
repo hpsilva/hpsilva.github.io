@@ -6,7 +6,7 @@ published: true
 <style>
 
   .form-signin {
-    max-width: 230px;
+    max-width: 330px;
     padding: 15px;
     margin: auto;
   }
