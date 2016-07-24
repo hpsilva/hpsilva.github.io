@@ -1,8 +1,7 @@
 ---
 layout: page
-title: 
-comments: false
 published: true
+css: "/css/contact.css"
 ---
 <html>
     <div class="container">
