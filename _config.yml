@@ -16,7 +16,7 @@ navbar-links:
     #- Macro / Fundamentals
   Systems: "systems"
   About: "about"
-  LOGIN: "http://hpsilva.io"
+  LOGIN: "login"
 
 
 # --- Footer options --- #
