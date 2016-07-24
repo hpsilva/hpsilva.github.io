@@ -48,7 +48,7 @@ published: true
   
 </style>
 
-<div class="container">
+<div class="contain">
 
   <form class="form-signin">
     <h2 class="form-signin-heading">Sign in</h2>
