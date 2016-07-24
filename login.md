@@ -6,9 +6,9 @@ published: true
 <style>
 
   .form-signin {
-    max-width: 130px;
+    max-width: 230px;
     padding: 15px;
-    margin: 0 auto;
+    margin: auto;
   }
   
   .form-signin .form-signin-heading,
