@@ -10,6 +10,7 @@ published: true
       <form class="form-signin">
         <h2 class="form-signin-heading">Sign in</h2>
         <br>
+        
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
@@ -21,7 +22,11 @@ published: true
           </label>
         </div>
         
+        <br>
+        
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        
+        <br><br><br>
         
       </form>
 
