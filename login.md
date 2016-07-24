@@ -51,7 +51,7 @@ published: true
 <div>
 
   <form class="form-signin">
-    <h2 class="form-signin-heading">Enter your credentials</h2>
+    <h2 class="form-signin-heading">Login credentials</h2>
     <br>
     
     <label for="inputEmail" class="sr-only">Email address</label>
