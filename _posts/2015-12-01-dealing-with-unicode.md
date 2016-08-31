@@ -19,7 +19,8 @@ fix = ''.join([x for x in unicode_string if ord(x) < 128])
 
 > 'Importao'
 ```
-<br>
+
+
 ### String method encode
 Another possibility is to make use of the built in library and it's encode/decode methods. It encodes a string to a given encoding, but it must be assured that a special argument is passed that is `ignore` or `replace`, like so
 
@@ -32,7 +33,8 @@ unicode_string.encode('ASCII', 'ignore')
 unicode_string.encode('ASCII', 'replace')
 > 'Importa??o'
 ```
-<br>
+
+
 ### Unicodedata library
 In deaing with this unicode sort of issues, the best way i have found is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
 
@@ -44,7 +46,8 @@ unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
 > 'Importacao'
 ```
-<br>
+
+
 As you could see this methods of sorting unicode issues are fairly simple and of straight forward application thus avoiding the Unicode characters pain.
 
 For your further reference i'd suggest you to have a look at the <a href='https://docs.python.org/2/library/unicodedata.html'>unicodedata</a> documents.
