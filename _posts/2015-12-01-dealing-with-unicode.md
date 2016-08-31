@@ -6,11 +6,11 @@ comments: false
 show-avatar: true
 ---
 
-Unicode issues have been one of the difficult problems to deal with when it comes to external libraries, and at times external hardware does not support it and throw nasty errors or silent bugs.
+Unicode issues have been one of the difficult problems to deal with when it comes to external libraries, and at times even external hardware does not support it and throw nasty errors or silent bugs.
 
-Usually the problems i have to tackle concern more data readability rather then to be kept like the original, and as such some of the tricks described below will do.
+Usually the problems i have to tackle concern more data readability rather than it is kept like the original, therefore some of the tricks i will advance below will do.
 
-### List comprehension
+### List comprehensions
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
 
 ```python
@@ -47,4 +47,4 @@ unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
 As you could see this methods of sorting unicode issues are fairly simple and of straight forward application thus avoiding the Unicode characters pain.
 
-For your further reference i' suggest you have a look at the <a href='https://docs.python.org/2/library/unicodedata.html'>unicodedata</a> documents.
+For your further reference i'd suggest you to have a look at the <a href='https://docs.python.org/2/library/unicodedata.html'>unicodedata</a> documents.
