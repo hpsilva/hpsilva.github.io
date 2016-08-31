@@ -4,7 +4,6 @@ title: Dealing with Unicode Issues
 subtitle: The very first post
 comments: false
 show-avatar: true
-#bigimg: /img/banner-flying.jpg
 ---
 
 # This is a test
