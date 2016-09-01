@@ -6,9 +6,9 @@ comments: false
 show-avatar: true
 ---
 
-Unicode issues have been one of the difficult problems to deal with when it comes to external libraries, and at times even external hardware does not support it and throw nasty errors or silent bugs.
+Unicode issues are one of the difficult problems to deal with when it comes to i.e. parsing websites or even worst, when external hardware does not support it and throw nasty errors or silent bugs.
 
-Usually the problems i have to tackle concern more data readability rather than it is kept like the original, therefore some of the tricks i will advance below will do.
+Usually the problems we have to tackle concern more data readability rather than the similarity to its origins, therefore some of the tricks we will advance below will do.
 
 ### List comprehensions
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
@@ -21,7 +21,7 @@ fix = ''.join([x for x in unicode_string if ord(x) < 128])
 ```
 
 
-### String method encode
+### String encode method
 Another possibility is to make use of the built in library and it's encode/decode methods. It encodes a string to a given encoding, but it must be assured that a special argument is passed that is `ignore` or `replace`, like so
 
 ```python
@@ -30,15 +30,17 @@ unicode_string.encode('ASCII', 'ignore')
 
 > 'Importao'
 
+
 unicode_string.encode('ASCII', 'replace')
+
 > 'Importa??o'
 ```
 
 
 ### Unicodedata library
-In deaing with this unicode sort of issues, the best way i have found is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
+In deaing with this unicode sort of issues, the best way we have found is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
 
-Unicodedata contains a method `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several modes (NFC, NFKC, NFD, NFKD), but as we are just concerned to degrade from Unicode to ASCII, we'll be using `NFKD`, like so
+Unicodedata contains a method `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several modes (NFC, NFKC, NFD, NFKD), but as we are just concerned to degrade from Unicode to ASCII, we'll be using this time around `NFKD` like so:
 
 ```python
 unicode_string = 'Importação'
