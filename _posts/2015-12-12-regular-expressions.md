@@ -39,7 +39,7 @@ else:
 > Match
 ```
 
-Other functions to match patterns are `re.search` and `re.findall`. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
+Other available on the `re` library to match patterns are `re.search` and `re.findall`. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
 
 ``` python
 import re
