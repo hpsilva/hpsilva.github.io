@@ -11,6 +11,7 @@ show-avatar: true
 They are a domain spacific language (DSL) that is present as library in most modern programming languages, not just Python. DSL languages are quite a popular example of and as well the famous SQL for database. Private DSL languages are often used for specific industrial purposes.
 
 As for regular exressions or RegEx, they are usefull for two main tasks:
+
 * Verifying that strings mach a pattern, and for instance that a stringhas the format of an email address i.e.;
 * Performing replacements in a string as i.e. changing all American spelling to British ones.
 
