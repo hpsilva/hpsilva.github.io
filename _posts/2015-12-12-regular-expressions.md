@@ -38,3 +38,33 @@ else:
   
 > Match
 ```
+
+Other functions to match patterns are ´re.search´ and ´re.findall´. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
+
+´´´python
+import re
+
+pattern = r'spam'
+
+if re.match(pattern, 'eggspamsausagespam'):
+  print('Match!')
+else:
+  print('No match...')
+  
+> No match...
+
+
+if re.search(pattern, 'eggspamsausagespam'):
+  print('Match')
+else:
+  print('No match...')
+
+> Match
+
+
+print(re.findall(pattern, 'eggspamsausagespam'))
+
+> ['spam', 'spam']
+´´´
+
+In the example above, the ´match´ function did not match the pattern, as it looks at the beggining of the string only. On the other hand the ´search´ function found a match in the string.
