@@ -4,6 +4,7 @@ title: Regular Expressions
 subtitle: Difficult to grasp, but very useful
 comments: false
 show-avatar: false
+publsihed: true
 ---
 
 **Regular expressions** are a powerful tool to deal with various kinds of string coding challenges.
