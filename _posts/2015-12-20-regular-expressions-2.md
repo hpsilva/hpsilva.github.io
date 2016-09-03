@@ -44,7 +44,7 @@ Following table lists the regular expression syntax that is available in Python 
 |re{ n}|Matches exactly n number of occurrences of preceding expression.|
 |re{ n,}|Matches n or more occurrences of preceding expression.|
 |re{ n, m}|Matches at least n and at most m occurrences of preceding expression.|
-|a| b|Matches either a or b.|
+|a\| b|Matches either a or b.|
 |(re)	|Groups regular expressions and remembers matched text.|
 |(?imx)|Temporarily toggles on i, m, or x options within a regular expression. If in parentheses, only that area is affected.|
 |(?-imx)|Temporarily toggles off i, m, or x options within a regular expression. If in parentheses, only that area is affected.|
