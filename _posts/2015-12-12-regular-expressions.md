@@ -39,6 +39,8 @@ else:
 > Match
 ```
 
+### Search() and findall()
+
 Other tools available on the `re` library to match patterns are `re.search` and `re.findall`. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
 
 ``` python
@@ -68,3 +70,45 @@ print(re.findall(pattern, 'eggspamsausagespam'))
 ```
 
 In the example above, the `match` function did not match the pattern, as it looks at the beggining of the string only. On the other hand the `search` function found a match in the string.
+
+### Other search methods
+
+RegEx search returns an object with several methods that give details about it. This methods include `group` that returns the string matched, `start` and `end` that return the start and end positions of the match, and `span`that returns the start and end position as a tuple. Let´s see in the example below:
+
+```python
+import re
+
+pattern = r'spam'
+
+match = re.search(pattern, 'eggspamsausage')
+if match:
+  print(match.group())
+  print(match.start())
+  print(match.end())
+  print(match.span())
+  
+
+> pam
+> 4 
+> 7
+> (4, 7)
+
+
+### Search & Replace
+
+One of the most import `re`methods that use regular expressions is the `sub`.
+
+This method replaces all occurences of the **pattern** in the string making use of repl thus substituting all occurences unless **max** limit is provided. This method returns the modified string.
+
+``` python
+import re
+
+str = "My name is David. Hi David."
+pattern = r'David'
+newstr = re.sub(pattern, 'Amy', str)
+print(newstr)
+
+> My name is Amy. Hi Amy.
+```
+
+Regular expressions are a deep topic, and in this thread we barely scratched the surface of its abilities. For your further reference i recommend you having a go at the <a href='https://docs.python.org/2/library/re.html'>Python re library</a>!
