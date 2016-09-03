@@ -57,11 +57,11 @@ else:
 
 
 if re.search(pattern, 'eggspamsausagespam'):
-  print('Match')
+  print('Match!')
 else:
   print('No match...')
 
-> Match
+> Match!
 
 
 print(re.findall(pattern, 'eggspamsausagespam'))
