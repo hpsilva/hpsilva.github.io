@@ -24,7 +24,7 @@ After we've defined a regular expression, python `re.match` method ca be used i.
 To avoid any confusions while working with regular expressions, we would make use of raw strings as ´r"expression"´.
 Raw strings don't escape anything, which makes use of regular expressions easier.
 
-The next example checks if the pattern 'span' match the string and prints 'Match!' if it does:
+The next example checks if the pattern 'span' match the string and prints 'Match!' if it does so:
 
 ```python
 import re
