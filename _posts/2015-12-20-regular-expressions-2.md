@@ -10,7 +10,7 @@ published: true
 If you got thru my last article about <a href='http://hpsilva.io/2015-12-12-regular-expressions/'>RegEx</a>, you might got wondering on why i have addressed to regular expressions as 'difficult to grasp'.
 Well, the reason being that on the previous article we essentially covered the <a href='https://docs.python.org/2/library/re.html'>tool</a> Python provides on its standard library to deal with RegEx, however the examples covered were just introductory.
 
-If you are curious about the power of what can get done with RegEx, just bear with me a bit more as i'll provide few more examples this time around focusing on regEx patterns.
+If you are curious about the power of what can get done with RegEx, just bear with me a bit more as i'll provide few more information this time around focusing on regEx patterns.
 
 To start with it should be remarked that there are various characters which would have special meaning for `Python` when they are used in regular expressions. 
 To avoid conflicting situations while dealing with regEx in Python, we shall then make use of **raw strings** instead as `r'expression'`.
@@ -27,7 +27,7 @@ To avoid conflicting situations while dealing with regEx in Python, we shall the
 |re.X|Permits "cuter" regular expression syntax. It ignores whitespace (except inside a set [] or when escaped by a backslash) and treats unescaped # as a comment marker|
 
 ### RegEx Modifiers
-Except for control characters, (+ ? . * ^ $ ( ) [ ] { } | \), all characters match themselves. You can escape a control character by preceding it with a backslash.
+Except for control characters `(+ ? . * ^ $ ( ) [ ] { } | \)` all characters match themselves. Control characters can be escaped by preceding it with a backslash `\`.
 
 Following table lists the regular expression syntax that is available in Python −
 
@@ -38,12 +38,12 @@ Following table lists the regular expression syntax that is available in Python 
 |.|Match any single character except newline|
 |[...]|Match any single character inside the brackets|
 |[^...]|Match any single character not inside the brackets|
-|re*|Match 0 or more occurrences of preceeding expression|
-|re+|Match 1 or more occurrence of preceeding expression|
-|re?|Match 0 or 1 occurrence of preceeding expression|
-|re{ n}|Match exactly n number of occurrences of preceeding expression|
-|re{ n,}|Match n or more occurrences of preceeding expression|
-|re{ n, m}|Match at least n and at most m occurrences of preceeding expression|
+|re*|Match 0 or more occurrences of preceding expression|
+|re+|Match 1 or more occurrence of preceding expression|
+|re?|Match 0 or 1 occurrence of preceding expression|
+|re{ n}|Match exactly n number of occurrences of preceding expression|
+|re{ n,}|Match n or more occurrences of preceding expression|
+|re{ n, m}|Match at least n and at most m occurrences of preceding expression|
 |a \| b|Match either a or b|
 |(re)	|Group regular expressions and remembers matched text|
 |(?imx)|Temporarily toggle on i, m, or x options within a regular expression. When inside parentheses, only that area is affected|
@@ -71,7 +71,10 @@ Following table lists the regular expression syntax that is available in Python 
 |\1...\9|Match nth grouped subexpression|
 |\10|Match nth grouped subexpression if matched already. Otherwise refers to the octal representation of a character code|
 
-### Examples of Pattern Matching
+### Making use of the Pattern Matching
+```python
+
+```
 
 
 Sources:
