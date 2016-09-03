@@ -105,10 +105,10 @@ print re.findall(r'([Pp])ython&\1aerl', 'A Python&Perl string under test')
 > ['Python&Pearl']
 ```
 
-As regEx by itself can be a complex subject, i have found great help <a href='http://pythex.org/'>here</a> and <a href='https://www.regexone.com/lesson/introduction_abcs'>here</a> in solving this type of string manipulation issues.
+As regEx by itself is a very interesting chellenge at times, i have found great help <a href='http://pythex.org/'>here</a> and <a href='https://www.regexone.com/lesson/introduction_abcs'>here</a> in solving this type of string manipulation issues.
 
 
-Sources:
+#### Sources:
 
 * <a href='https://docs.python.org/2/library/re.html'>Regular Expression Operations</a>
 * <a href='https://docs.python.org/2/howto/regex.html#regex-howto'>Regular Expressions HOW TO</a>
