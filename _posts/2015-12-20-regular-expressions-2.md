@@ -27,9 +27,9 @@ To avoid conflicting situations while dealing with regEx in Python, we shall the
 |re.X|Permits "cuter" regular expression syntax. It ignores whitespace (except inside a set [] or when escaped by a backslash) and treats unescaped # as a comment marker|
 
 ### RegEx Modifiers
-Except for control characters `(+ ? . * ^ $ ( ) [ ] { } | \)` all characters match themselves. Control characters can be escaped by preceding it with a backslash `\`.
+Except for control characters `(+ ? . * ^ $ ( ) [ ] { } | \)` all other characters match themselves. Control characters can be escaped by preceding it with a backslash `\`.
 
-Following table lists the regular expression syntax that is available in Python −
+Following table presents regular expression syntax available in Python:
 
 |Pattern|Description|
 |:-|:-|
@@ -73,13 +73,42 @@ Following table lists the regular expression syntax that is available in Python 
 
 ### Making use of the Pattern Matching
 ```python
+import re
 
+# Find 'Python' or 'python'
+print re.findall(r'[Pp]ython', 'A Python string under test')
+
+> ['Python']
+
+
+# Find 'Python or pythom'
+print re.findall(r'[Pp]ytho[nm]', 'A Pythom string under test')
+
+> ['Pythom']
+
+
+# Find 'Python' or 'Pytho'
+print re.findall(r'Python?', 'A Pytho string under test')
+
+> ['Pytho']
+
+
+# Find 'Python' or 'Perl'
+print re.findall(r'Python|Perl', 'A Perl string under test')
+
+> ['Perl']
+
+
+# Find 'Python' and 'Pearl'
+print re.findall(r'([Pp])ython&\1aerl', 'A Python&Perl string under test')
+
+> ['Python&Pearl']
 ```
+
+As regEx by itself can be a complex subject, i have found great help <a href='http://pythex.org/'>here</a> and <a href='https://www.regexone.com/lesson/introduction_abcs'>here</a> in solving this type of string manipulation issues.
 
 
 Sources:
 
 * <a href='https://docs.python.org/2/library/re.html'>Regular Expression Operations</a>
 * <a href='https://docs.python.org/2/howto/regex.html#regex-howto'>Regular Expressions HOW TO</a>
-
-
