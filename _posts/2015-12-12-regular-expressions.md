@@ -9,7 +9,7 @@ published: true
 
 <a href='https://en.wikipedia.org/wiki/Regular_expression'>**Regular expressions**</a> are a powerful tool to deal with various kinds of string coding challenges.
 
-They are a domain spacific language (DSL) that is present as library in most modern programming languages, not only Python. Regular expressions are quite a popular DSL language example along with the famous SQL for database operations.
+They are a domain spacific language (DSL) that is present as library in most modern programming languages, not only exclusive to Python. Actually regular expressions are quite a popular DSL language example along with famous others like SQL for database operations.
 
 Regular exressions or RegEx are usefull for two main tasks:
 
