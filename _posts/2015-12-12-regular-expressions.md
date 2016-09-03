@@ -6,7 +6,7 @@ comments: false
 show-avatar: true
 ---
 
-*Regular expressions* are a powerful tool to de ith various kinds of string coding challenges.
+**Regular expressions** are a powerful tool to de ith various kinds of string coding challenges.
 
 They are a domain spacific language (DSL) that is present as library in most modern programming languages, not just Python. DSL languages are quite a popular example of and as well the famous SQL for database. Private DSL languages are often used for specific industrial purposes.
 
@@ -16,7 +16,7 @@ As for regular exressions or RegEx, they are usefull for two main tasks:
 
 
 ### Python
-Regular expressions in Python can be access using the *re* module that is part of Python standard library.
+Regular expressions in Python can be access using the `re` module that is part of Python standard library.
 After we've defined a regular expressions, the `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, if not, returns `None`.
 
 To avoid any confsions while working with regular expressions, we would make use of raw strings as `r'expression'`.
