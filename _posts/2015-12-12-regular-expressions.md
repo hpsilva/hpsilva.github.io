@@ -17,7 +17,7 @@ Regular exressions or RegEx are usefull for two main tasks:
 * Performing replacements in a string as i.e. fixing spelling issues.
 
 
-### Python
+### Python re library
 Regular expressions in Python can be accessed using the `re` module that is part of Python standard library.
 After we've defined a regular expression, python `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, otherwise returns `None`.
 
@@ -100,10 +100,10 @@ One of the most import `re`methods that use regular expressions is the `sub`.
 
 This method replaces all occurences of the **pattern** in the string making use of repl thus substituting all occurences unless **max** limit is provided. This method returns the modified string.
 
-``` python
+```python
 import re
 
-str = "My name is David. Hi David."
+str = 'My name is David. Hi David.'
 pattern = r'David'
 newstr = re.sub(pattern, 'Amy', str)
 print(newstr)
