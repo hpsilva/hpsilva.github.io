@@ -6,25 +6,24 @@ comments: false
 show-avatar: true
 ---
 
-**Regular expressions** are a powerful tool to de ith various kinds of string coding challenges.
+**Regular expressions** are a powerful tool to deal with various kinds of string coding challenges.
 
-They are a domain spacific language (DSL) that is present as library in most modern programming languages, not just Python. DSL languages are quite a popular example of and as well the famous SQL for database. Private DSL languages are often used for specific industrial purposes.
+They are a domain spacific language (DSL) that is present as library in most modern programming languages, not just Python. Regular expression are quite a popular DSL language example along with the famous SQL for database operations. Private DSL languages are often used for specific industrial purposes.
 
 As for regular exressions or RegEx, they are usefull for two main tasks:
-
-* Verifying that strings mach a pattern, and for instance that a stringhas the format of an email address i.e.;
-* Performing replacements in a string as i.e. changing all American spelling to British ones.
+* Verifying that strings match a pattern, and for instance that a string has the format of an email address i.e.;
+* Performing replacements in a string as i.e. fixing spelling issues.
 
 
 ### Python
 Regular expressions in Python can be access using the `re` module that is part of Python standard library.
-After we've defined a regular expressions, the `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, if not, returns `None`.
+After we've defined a regular expression, python `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, otherwise returns `None`.
 
-To avoid any confsions while working with regular expressions, we would make use of raw strings as `r'expression'`.
-Raw strings don't escape anything, which maes use of regular expressions easier.
+To avoid any confusions while working with regular expressions, we would make use of raw strings as `r"expression"`.
+Raw strings don't escape anything, which makes use of regular expressions easier.
 
-The next example checks if the pattern 'span' match the string and prints 'Match' if it does:
-```Python
+The next example checks if the pattern 'span' match the string and prints 'Match!' if it does:
+``` Python
 import re
 
 pattern = r'spam'
