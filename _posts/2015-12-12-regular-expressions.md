@@ -21,7 +21,7 @@ Regular exressions or RegEx are usefull for two main tasks:
 Regular expressions in Python can be accessed using the `re` module that is part of Python standard library.
 After we've defined a regular expression, python `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, otherwise returns `None`.
 
-To avoid any confusions while working with regular expressions, we would make use of raw strings as ´r"expression"´.
+To avoid any confusions while working with regular expressions, we would make use of raw strings as `r"expression"`.
 Raw strings don't escape anything, which makes use of regular expressions easier.
 
 The next example checks if the pattern 'span' match the string and prints 'Match!' if it does so:
@@ -39,9 +39,9 @@ else:
 > Match
 ```
 
-Other functions to match patterns are ´re.search´ and ´re.findall´. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
+Other functions to match patterns are `re.search` and `re.findall`. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
 
-´´´ python
+``` python
 import re
 
 pattern = r'spam'
@@ -65,6 +65,6 @@ else:
 print(re.findall(pattern, 'eggspamsausagespam'))
 
 > ['spam', 'spam']
-´´´
+```
 
-In the example above, the ´match´ function did not match the pattern, as it looks at the beggining of the string only. On the other hand the ´search´ function found a match in the string.
+In the example above, the `match` function did not match the pattern, as it looks at the beggining of the string only. On the other hand the `search` function found a match in the string.
