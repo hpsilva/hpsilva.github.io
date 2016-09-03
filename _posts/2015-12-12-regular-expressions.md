@@ -23,7 +23,7 @@ To avoid any confusions while working with regular expressions, we would make us
 Raw strings don't escape anything, which makes use of regular expressions easier.
 
 The next example checks if the pattern 'span' match the string and prints 'Match!' if it does:
-``` Python
+```python
 import re
 
 pattern = r'spam'
