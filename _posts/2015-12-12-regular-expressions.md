@@ -11,10 +11,11 @@ published: true
 
 They are a domain spacific language (DSL) that is present as library in most modern programming languages, not only exclusive to Python. Actually regular expressions are quite a popular DSL language example along with famous others like SQL for database operations.
 
-Regular exressions or RegEx are usefull for two main tasks:
-
-* Verifying that strings match a pattern, and for instance that a string has the format of an email address i.e.;
-* Performing replacements in a string as i.e. fixing spelling issues.
+According to Python `re` documents we have that:
+> Regular expressions are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module. 
+Using this little language, you specify the rules for the set of possible strings that you want to match; this set might contain English sentences, or e-mail addresses, or TeX commands, or anything you like. 
+You can then ask questions such as “Does this string match the pattern?”, or “Is there a match for the pattern anywhere in this string?”. 
+You can also use REs to modify a string or to split it apart in various ways.
 
 
 ### Python re library
