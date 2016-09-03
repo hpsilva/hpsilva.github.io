@@ -114,3 +114,9 @@ print(newstr)
 ```
 
 Regular expressions are a deep topic, and in this thread we barely scratched the surface of its abilities. For your further reference i recommend you having a go at the <a href='https://docs.python.org/2/library/re.html'>Python re library</a>!
+
+
+Sources:
+
+* <a href='https://docs.python.org/2/library/re.html'>Regular Expression Operations</a>
+* <a href='https://docs.python.org/2/howto/regex.html#regex-howto'>Regular Expressions HOW TO</a>
