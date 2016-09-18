@@ -19,6 +19,7 @@ fix = ''.join([x for x in unicode_string if ord(x) < 128])
 
 > 'Importao'
 ```
+<br>
 
 
 ### String encode method
@@ -35,6 +36,7 @@ unicode_string.encode('ASCII', 'replace')
 
 > 'Importa??o'
 ```
+<br>
 
 
 ### Unicodedata library
@@ -43,13 +45,14 @@ In dealing with this unicode sort of issues, the best way we have found around h
 Unicodedata contains a method named `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several modes (NFC, NFKC, NFD, NFKD), but as of now we are just concerned to degrade from Unicode to ASCII so we'll be using this time around `NFKD` like so:
 
 ```python
-import unicodedata
+import unicodedata as unicode
 
 unicode_string = 'Importação'
 unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
 > 'Importacao'
 ```
+<br>
 
 
 As you could see this methods of sorting unicode issues are fairly simple and of straight forward application thus avoiding the Unicode characters pain.
