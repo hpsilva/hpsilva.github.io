@@ -43,6 +43,8 @@ In dealing with this unicode sort of issues, the best way we have found around h
 Unicodedata contains a method named `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several modes (NFC, NFKC, NFD, NFKD), but as of now we are just concerned to degrade from Unicode to ASCII so we'll be using this time around `NFKD` like so:
 
 ```python
+import unicodedata
+
 unicode_string = 'Importação'
 unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
