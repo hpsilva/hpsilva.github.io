@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Dealing with Unicode Issues
+title: Dealing with Unicode Issues II
 subtitle: A simple way to
 comments: false
 show-avatar: true
-published: false
+published: true
 ---
 
 
