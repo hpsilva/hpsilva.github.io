@@ -8,7 +8,7 @@ show-avatar: true
 
 Unicode issues are one of a kind problem to deal with when it comes to i.e. parsing websites, or even worst when external hardware does not support them thus throwing silent bugs. This particular type of problem essentially arise when handling non-English languages which as opposed to unaccented English, they hold a much larger ammount of characters and special characters. Just think of Latin languages for instance, or the Cyrillic alphabet.
 
-In the situation that the data under scrutiny is for own consumption, on this end we are usually more focused on its readability rather than its similarity to origin. With that said, there is a number of very simple actions one can care of so that our data is easily readable:
+In the situation that the data under scrutiny is for own consumption, on this end we are usually more focused on its readability (by converting to <a href='https://en.wikipedia.org/wiki/ASCII'>ASCII</a>)rather than its similarity to origin. With that said, there is a number of very simple actions one can care of so that our data is easily readable:
 
 ### List comprehensions
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
