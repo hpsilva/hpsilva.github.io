@@ -57,4 +57,4 @@ unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
 As you could see this methods of sorting unicode issues are fairly simple and of straight forward application thus avoiding the Unicode characters pain.
 
-For your further reference i'd suggest you to have a look at the <a href='https://docs.python.org/2/library/unicodedata.html'>unicodedata</a> documents.
+For your further reference i'd suggest you to have a look at <a href='https://docs.python.org/2/howto/unicode.html'>Python unicode</a> and <a href='https://docs.python.org/2/library/unicodedata.html'>unicodedata</a> docs.
