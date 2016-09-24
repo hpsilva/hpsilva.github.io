@@ -6,9 +6,9 @@ comments: false
 show-avatar: true
 ---
 
-Unicode issues are one of the difficult problems to deal with when it comes to i.e. parsing websites or even worst, when external hardware does not support it and throw nasty errors or silent bugs.
+Unicode issues are one of a kind problem to deal with when it comes to i.e. parsing websites, or even worst when external hardware does not support them thus throwing silent bugs. This particular type of problem essentially arise when handling non-English languages which as opposed to unaccented English, they hold a much larger ammount of characters and special characters. Just think of Latin languages for instance, or the Cyrillic alphabet.
 
-Usually the problems we have to tackle concern more data readability rather than the similarity to its origins, therefore some of the tricks we will advance below will do.
+In the situation that the data under scrutiny is for own consumption, on this end we are usually more focused on its readability rather than its similarity to origin. With that said, there is a number of very simple actions one can care of so that our data is easily readable:
 
 ### List comprehensions
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
@@ -40,9 +40,9 @@ unicode_string.encode('ASCII', 'replace')
 
 
 ### Unicodedata library
-In dealing with this unicode sort of issues, the best way we have found around here is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
+In dealing with this unicode sort of issues, the simplest way found is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
 
-Unicodedata contains a method named `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several modes (NFC, NFKC, NFD, NFKD), but as of now we are just concerned to degrade from Unicode to ASCII so we'll be using this time around `NFKD` like so:
+Unicodedata contains a method named `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several operating modes (NFC, NFKC, NFD, NFKD), but as of now we are just concerned to degrade from Unicode to ASCII so we'll be using this time around `NFKD` like so:
 
 ```python
 import unicodedata as unicode
