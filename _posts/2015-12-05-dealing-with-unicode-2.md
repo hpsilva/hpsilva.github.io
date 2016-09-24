@@ -14,6 +14,7 @@ Essentially the issue is that <a href='https://en.wikipedia.org/wiki/ASCII'>ASCI
 
 
 In Python 2, there are a number of rules that got to be followed by if we want to avoid having issues with unicode, as summarized here:
+
 * Strings shall be always processed internally as `unicode` rather then `str` objects. First time the system is given a `str` object, it shall get converted right away to `unicode` object by calling the method `.decode('utf-8')`, where the system gets information about what the encoding is.
 * Next, everytime the system outputs content by i.e. storing out to a file, use the method `.encode('utf-8)` to encode the content correctly.
 
@@ -23,6 +24,7 @@ Let's walk through a couple of examples so that our unicode will get evidenced. 
 
 # # Reading Content
 Next, inside Python command line read the file from disk, check its `type` and `print` the content to screen.
+
 ```python
 # Read file content
 with open('string.txt', 'r') as data:
@@ -41,6 +43,7 @@ string
 print(string)
 > Olß
 ```
+
 As we can see, the file is read from disk as a `str` type as expected. Next by checking `string` variable content we arrive into our first issue: the file's content is `Olá`, but after being imported to Python is became `Ol\xe1`. Further on, by printing `string` variable to screen we are shown `Olß`. Now do you understand why you find all over the internet comments about the **unicode pain**? Right, let's elaborate a bit more and try to debunk what is happening under the hood.
 
 
@@ -49,13 +52,15 @@ When Python read the file from disk, we did not informed about what it was the e
 
 
 We can check what our default encoding is by running:
+
 ```python
 import sys
 
 sys.getdefaultencoding()
 > 'ascii'
 ```
-In my case, the default set is `ascii`
+
+In my case, the default set is `ascii`.
 
 All this is fine, because every character in a string is a single byte, and the `ASCII` table translates each byte value into a unique character, thus the need to fallback to an encoding. Now what we want to do is to inform python about that variable's encoding so that it can correctly assing the right caracters for our file content, like so:
 
