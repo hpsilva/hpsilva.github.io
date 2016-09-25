@@ -19,7 +19,7 @@ You can then ask questions such as “Does this string match the pattern?”, or
 You can also use REs to modify a string or to split it apart in various ways.
 
 
-### Python re library
+### # Python re library
 Regular expressions in Python can be accessed using the `re` module that is part of Python standard library.
 After we've defined a regular expression, python `re.match` method ca be used i.e to determine wether it matches at the beginning of a string. If it does, `match` returns an object representing the match, otherwise returns `None`.
 
@@ -41,7 +41,7 @@ else:
 > Match
 ```
 
-### Search and Findall
+### # Search and Findall
 
 Other tools available on the `re` library to match patterns are `re.search` and `re.findall`. The first finds a match of a pattern anywhere in the string, while the second function returns a list of a all substrings that match a pattern, as the next example demonstrate:
 
@@ -73,7 +73,7 @@ print(re.findall(pattern, 'eggspamsausagespam'))
 
 In the example above, the `match` function did not match the pattern, as it looks at the beggining of the string only. On the other hand the `search` function found a match in the string.
 
-### Other search methods
+### # Other search methods
 
 RegEx search returns an object with several methods that give details about it. This methods include `group` that returns the string matched, `start` and `end` that return the start and end positions of the match, and `span`that returns the start and end position as a tuple. Let´s see in the example below:
 
@@ -97,7 +97,7 @@ if match:
 ```
 
 
-### Search & Replace
+### # Search & Replace
 
 One of the most import `re`methods that use regular expressions is the `sub`.
 
