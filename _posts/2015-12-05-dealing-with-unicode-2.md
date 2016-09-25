@@ -25,7 +25,7 @@ Now let's walk through a couple of examples so that the task at hand will get ev
 
 # # Getting External Content
 
-Inside Python command line read the file from disk, check its `type` and `print` the content to screen.
+Inside a Python console let's read the file from disk, check its `type` and `print` the content to screen.
 
 ```python
 # Read file content
