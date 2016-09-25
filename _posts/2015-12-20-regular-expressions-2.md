@@ -15,7 +15,7 @@ If you are curious about the power of what can get done with RegEx, just bear wi
 To start with it should be remarked that there are various characters which would have special meaning for `Python` when they are used in regular expressions. 
 To avoid conflicting situations while dealing with regEx in Python, we shall then make use of **raw strings** instead as `r'expression'`.
 
-### # RegEx Patterns
+# # RegEx Patterns
 
 |Modifier|Description|
 |:-|:-|
@@ -26,7 +26,7 @@ To avoid conflicting situations while dealing with regEx in Python, we shall the
 |re.U|Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B|
 |re.X|Permits "cuter" regular expression syntax. It ignores whitespace (except inside a set [] or when escaped by a backslash) and treats unescaped # as a comment marker|
 
-### # RegEx Modifiers
+# # RegEx Modifiers
 Except for control characters `(+ ? . * ^ $ ( ) [ ] { } | \)` all other characters match themselves. Control characters can be escaped by preceding it with a backslash `\`.
 
 Following table presents regular expression syntax available in Python:
@@ -71,7 +71,7 @@ Following table presents regular expression syntax available in Python:
 |\1...\9|Match nth grouped subexpression|
 |\10|Match nth grouped subexpression if matched already. Otherwise refers to the octal representation of a character code|
 
-### # Making use of the Pattern Matching
+# # Making use of the Pattern Matching
 ```python
 import re
 
