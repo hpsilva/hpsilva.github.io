@@ -110,4 +110,4 @@ And voilà, note how after encoding `string_encoded` content went back to its or
 
 As we hopefully demonstrated, to deal with the diversity of languages present nowadays out there thoughout the Web does not need to be complicated, so long we take the necessary steps as demonstrated above to deal with new information that arrive or leave the system.
 
-Lastly we would like to point you to a further reading, actually an oldie but goldie article on why all this unicode mess emerged. It can be found <a href='http://www.joelonsoftware.com/articles/Unicode.html'>here</a>!
+Lastly we would like to point you to a further reading, actually an oldie but goldie article on why all this unicode mess emerged. It can be find <a href='http://www.joelonsoftware.com/articles/Unicode.html'>here</a>.
