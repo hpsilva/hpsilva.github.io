@@ -10,6 +10,7 @@ navbar-links:
   Blog: "http://hpsilva.io"
   Resources:
     - Market Snapshot: "snapshot"
+    - Market Sentiment: "sentiment"
     - Correlation Heatmap: "correlatio"
     #- Risk Report
     #- Macro / Fundamentals
