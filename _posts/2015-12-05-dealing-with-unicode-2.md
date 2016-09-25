@@ -7,7 +7,6 @@ show-avatar: true
 published: true
 ---
 
-
 In our <a href='http://hpsilva.io/2015-12-01-dealing-with-unicode/'>previous</a> article on unicode issues we dealt with the problem by taking simple steps to convert non-English characters to <a href=''> flat ASCII</a> ones. As mentioned, this is just fine in a context where special characters do not matter for the purpose of work to get done. But what if the task at hand comprises exchanging data with **Web** interfaces that deal with several languages? Being the case, unicode problematic must be cared of properly, and that is the motto for this article that will discuss the subject in bigger depth.
 
 Essentially the issue is that <a href='https://en.wikipedia.org/wiki/ASCII'>ASCII</a> tables contain a limited number of characters, and within those characters are solely included those related to non accented English. Unicode came to solve this problematic by basically allowing the use of a multitude of characters and therefore covering every existing language. The difficulty here is that we need to deal with strings by making use of a different approach and keeping the system informed of what encoding is being used.
@@ -20,7 +19,9 @@ In Python 2, there are few of rules that got to be followed by if we want to avo
 
 If this convention is not followed, likely is that we will see lots of strange characters in those strings with non-English content. Note that the approach is simple: `strings` must be converted to `unicode` objects in first place!
 
-Let's walk through a couple of examples so that the task at hand will get evidenced. To start with download this file <a href='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/data/string.txt'>here</a>.
+Note that there are several types of encoding, and the generally accepted of current use nowadays is `UTF-8`. According to <a href='https://en.wikipedia.org/wiki/UTF-8'>UTF-8</a> it is a character encoding capable of encoding all possible characters, or code points, as defined by Unicode standard.
+
+Now let's walk through a couple of examples so that the task at hand will get evidenced. To start with download this file <a href='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/data/string.txt'>here</a>.
 
 # # Getting External Content
 
@@ -48,10 +49,10 @@ print(string)
 As we can see, the file is read from disk as a `str` type as expected. Next by checking `string` variable content we arrive into our first issue: the file's content is `Olá`, but after being imported to Python it became 'Ol\xc3\xa1'. Further on, by printing `string` variable to screen we are shown `Ol├í`. Now do you understand why you find all over the internet comments about the **unicode pain**? Right, let's elaborate a bit more and try to debunk what is happening under the hood.
 
 
-When Python read the file from disk, we did not informed about what it was the encoding of our file's content in first place. Therefore it assumed the content to be the default set in the system, which most probably is 'ASCII'. 
+When Python read the file from disk, it did not had available any information about what it was the encoding of our file's content in first place. Therefore it assumed the content to be the default set in the system, which most probably is 'ASCII'. 
 
 
-We can check what our default encoding is by running:
+We can check what our default encoding:
 
 ```python
 import sys
@@ -81,12 +82,31 @@ print(string_decoded)
 
 Cool! Now that `string` variable was converted to `unicode object` and Python got informed about its content encoding, we have the correct representation of the text `Olá`. Pretty simple, ein!
 
-Note that there are several types of encoding, and the generally accepted of current use nowadays is `UTF-8`. According to <a href='https://en.wikipedia.org/wiki/UTF-8'>UTF-8</a> it is a character encoding capable of encoding all possible characters, or code points, as defined by Unicode standard.
+
+# # Exporting Content
+The process to output content from the system is similar to the previously described, just this time around we are going to make use of the `.encode('utf-8')` method. The logic behind is to inform the system how we want our variable content to be encoded for output, like so:
+
+```python
+# Encode the variable
+string_encoded = string_decoded.encode('utf-8')
+
+# Display its content
+string_encoded
+> 'Ol\xc3\xa1'
+
+# Print to screen
+print(string_encoded)
+>Ol├í
+
+# Store to disk
+with open('encoded_string.txt', 'w') as data:
+    data.write(string_encoded)
+    data.close()
+```
+
+And voila! Note how `string_encoded` content went back to its original representation `Ol├í`, and that is just fine. Furthermore, upon writing the file to disk we can check that `Olá` was properly stored. Cool!
 
 
-# # Unicode
 
-
-
-Sources: 
+### # Sources: 
 Actually an oldie but goldie article on why all this unicode mess emerged and keeps going on today during current moderm computing can be found <a href='http://www.joelonsoftware.com/articles/Unicode.html'>here</a>!
