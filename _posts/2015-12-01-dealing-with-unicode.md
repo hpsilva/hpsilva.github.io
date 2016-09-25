@@ -10,7 +10,7 @@ Unicode issues are one of a kind problem to deal with when it comes to i.e. pars
 
 In the situation that the data under scrutiny is for own consumption, on this end we are usually more focused on its readability (by converting to <a href='https://en.wikipedia.org/wiki/ASCII'>ASCII</a>) rather than its similarity to origin. With that said, there is a number of very simple actions one can care of so that our data is easily readable:
 
-### # List comprehensions
+# # List comprehensions
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
 
 ```python
@@ -22,7 +22,7 @@ fix = ''.join([x for x in unicode_string if ord(x) < 128])
 <br>
 
 
-### # String encode method
+# # String encode method
 Another possibility is to make use of the built in library and it's encode/decode methods. It encodes a string to a given encoding, but note that it must be assured the arguments `ignore` or `replace` are passed:
 
 ```python
@@ -39,7 +39,7 @@ unicode_string.encode('ASCII', 'replace')
 <br>
 
 
-### # Unicodedata library
+# # Unicodedata library
 In dealing with this unicode sort of issues, the simplest way found is to make use of the standard library `unicodedata`, that allow latin unicode characters to degrade nicely into ASCII.
 
 Unicodedata contains a method named `normalize` that is used to return the normal form of the Unicode string. Furthermore it has several operating modes (NFC, NFKC, NFD, NFKD), but as of now we are just concerned to degrade from Unicode to ASCII so we'll be using this time around `NFKD` like so:
