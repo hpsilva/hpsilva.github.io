@@ -9,13 +9,13 @@ published: true
 
 In our <a href='http://hpsilva.io/2015-12-01-dealing-with-unicode/'>previous</a> article on unicode issues we dealt with the problem by taking simple steps to convert non-English characters to <a href=''> flat ASCII</a> ones. As mentioned, this is just fine in a context where special characters do not matter for the purpose of work to get done. But what if the task at hand comprises exchanging data with **Web** interfaces that deal with several languages? Being the case, unicode problematic must be cared of properly, and that is the motto for this article that will discuss the subject in bigger depth.
 
-Essentially the issue is that <a href='https://en.wikipedia.org/wiki/ASCII'>ASCII</a> tables contain a limited number of characters, and within those characters are solely included those related to non accented English. Unicode came to solve this problematic by basically allowing the use of a multitude of characters and therefore covering every existing language. The difficulty here is that we need to deal with strings by making use of a different approach and keeping the system informed of what encoding is being used.
+Essentially the issue is that <a href='https://en.wikipedia.org/wiki/ASCII'>ASCII</a> tables contain a limited number of characters, and within those characters are solely included those related to non-accented English. Unicode came to solve this problematic by basically allowing the use of a multitude of characters and therefore covering every existing language. The difficulty here is that we need to deal with strings by making use of a different approach and keeping the system informed of what encoding is being used.
 
 
 In Python 2, there are few of rules that got to be followed by if we want to avoid having issues with encoding, as summarized here:
 
 * Strings shall be always processed internally as `unicode` rather then `str` objects. First time the system is given a `str` object, it shall get converted right away to `unicode` object by calling the method `.decode('utf-8')`, where the system gets information about what the encoding is.
-* Next, everytime the system outputs content by i.e. storing out to a file, use the method `.encode('utf-8)` to encode the content correctly.
+* Next, every time the system outputs content by i.e. storing out to a file, use the method `.encode('utf-8)` to encode the content correctly.
 
 If this convention is not followed, likely is that we will see lots of strange characters in those strings with non-English content. Note that the approach is simple: `strings` must be converted to `unicode` objects in first place!
 
@@ -52,7 +52,7 @@ As we can see, the file is read from disk as a `str` type as expected. Next by c
 When Python read the file from disk, it did not had available any information about what it was the encoding of our file's content in first place. Therefore it assumed the content to be the default set in the system, which most probably is 'ASCII'. 
 
 
-We can check what our default encoding:
+We can check what the default encoding is:
 
 ```python
 import sys
@@ -104,9 +104,10 @@ with open('encoded_string.txt', 'w') as data:
     data.close()
 ```
 
-And voila! Note how `string_encoded` content went back to its original representation `Ol├í`, and that is just fine. Furthermore, upon writing the file to disk we can check that `Olá` was properly stored. Cool!
+And voilà, note how `string_encoded` content went back to its original representation `Ol├í`, and that is just fine. Furthermore, upon writing the file to disk we can check that `Olá` was properly stored by opening the file. Cool!
 
+# # Final thoughts
 
+As we hopefully demonstrated, to deal with the diversity of languages present nowadays out there thoughout the Web does not need to be complicated, so long we take the necessary steps as demonstrated above when new information arrive or leave Python system.
 
-### # Sources: 
-Actually an oldie but goldie article on why all this unicode mess emerged and keeps going on today during current moderm computing can be found <a href='http://www.joelonsoftware.com/articles/Unicode.html'>here</a>!
+Lastly we would like to point you to a further reading, actually an oldie but goldie article on why all this unicode mess emerged. It can be found <a href='http://www.joelonsoftware.com/articles/Unicode.html'>here</a>!
