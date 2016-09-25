@@ -49,7 +49,7 @@ print(string)
 As we can see, the file is read from disk as a `str` type as expected. Next by checking `string` variable content we arrive into our first issue: the file's content is `Olá`, but after being imported to Python it became `Ol\xc3\xa1`. Further on, by printing `string` variable to screen we are shown `Ol├í`. Now do you understand why you find all over the internet comments about the **unicode pain**? Right, let's elaborate a bit more and try to debunk what is happening under the hood.
 
 
-When Python read the file from disk, it did not had available any information about what it was the encoding of our file's content in first place. Therefore it assumed the content to be the default set in the system, which most probably is 'ASCII'. 
+When Python read the file from disk, it did not had available any information about what it was the encoding of our file's content in first place. Therefore it assumed the content to be the default set in the system, which most probably is `ASCII`. 
 
 
 We can check what the default encoding is:
