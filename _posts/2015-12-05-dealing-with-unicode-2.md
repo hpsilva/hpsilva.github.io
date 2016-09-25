@@ -19,9 +19,9 @@ In Python 2, there are few of rules that got to be followed by if we want to avo
 
 If this convention is not followed, likely is that we will see lots of strange characters in those strings with non-English content. Note that the approach is simple: `strings` must be converted to `unicode` objects in first place!
 
-Note that there are several types of encoding, and the generally accepted of current use nowadays is `UTF-8`. According to <a href='https://en.wikipedia.org/wiki/UTF-8'>UTF-8</a> it is a character encoding capable of encoding all possible characters, or code points, as defined by Unicode standard.
+More, note that there are several types of encoding, and the generally accepted and currently used nowadays is `UTF-8`. According to <a href='https://en.wikipedia.org/wiki/UTF-8'>UTF-8</a>, it is a character encoding standard capable of encoding all possible characters, or code points, as defined by Unicode standard.
 
-Now let's walk through a couple of examples so that the task at hand will get evidenced. To start with download this file <a href='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/data/string.txt'>here</a>.
+Now let's walk through a couple of examples so that the task at hand will get evidenced. To start with, download this file <a href='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/data/string.txt'>here</a>.
 
 # # Getting External Content
 
