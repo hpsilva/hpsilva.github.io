@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Unicode Issues II
-subtitle: A simple way to
+title: Dealing with Unicode Issues
+subtitle: A simple way to - take II
 comments: false
 show-avatar: true
 published: true
