@@ -20,7 +20,7 @@ Cool! But what real world examples can be solved by this libraries? To mention a
 * Obtaining stock market live prices;
 * Check competitors' products pricing;
 * Read weather forecasts;
-* Set alerts based on threshold triggers for any of the above examples...
+* Grab entire websites...
 
 
 ## # Parsing Example
@@ -144,7 +144,10 @@ df.head()
 Lastly our script iterate over each parsed table row stored under the variable `tRows` and store data to a pandas dataframe for convenience. We close this article by displaying the head of our neat dataframe:
 
 <div>
-	<table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>stock</th>      <th>price</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>ALLIANZ SE NA O.N.</td>      <td>132.00</td>    </tr>    <tr>      <th>1</th>      <td>BASF SE NA O.N.</td>      <td>73.28</td>    </tr>    <tr>      <th>2</th>      <td>BAY.MOTOREN WERKE AG ST</td>      <td>73.93</td>    </tr>    <tr>      <th>3</th>      <td>BAYER AG NA O.N.</td>      <td>89.48</td>    </tr>    <tr>      <th>4</th>      <td>BEIERSDORF AG O.N.</td>      <td>84.26</td>    </tr>  </tbody></table>
-
+<table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>stock</th>      <th>price</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>ALLIANZ SE NA O.N.</td>      <td>132.00</td>    </tr>    <tr>      <th>1</th>      <td>BASF SE NA O.N.</td>      <td>73.28</td>    </tr>    <tr>      <th>2</th>      <td>BAY.MOTOREN WERKE AG ST</td>      <td>73.93</td>    </tr>    <tr>      <th>3</th>      <td>BAYER AG NA O.N.</td>      <td>89.48</td>    </tr>    <tr>      <th>4</th>      <td>BEIERSDORF AG O.N.</td>      <td>84.26</td>    </tr>  </tbody></table>
 </div>
+<br>
+For article simplicity, the demonstration here developed covers a small part of the parsing functionalities avaiable to the user. Nonetheless, and from our point of view it provides the reader with great hints of what tasks can get done at ease. Obviously the code could be developed much further with things like error control routines, mulitprocessing, throtling, etc, steps that essentially must be present in a bigger scrapping project. 
+
+For now this is all. Happy scrapping!
 <br>
