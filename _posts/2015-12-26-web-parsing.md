@@ -141,13 +141,9 @@ for item in tRows:
 df.head()
 ```
 
-Lastly our script iterate over each parsed table row stored under the variable `tRows` and store data to a pandas dataframe for convenience. We close this article by displaying the head of the dataframe:
+Lastly our script iterate over each parsed table row stored under the variable `tRows` and store data to a pandas dataframe for convenience. We close this article by displaying the head of our neat dataframe:
 
 <div>
 	<table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>stock</th>      <th>price</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>ALLIANZ SE NA O.N.</td>      <td>132.00</td>    </tr>    <tr>      <th>1</th>      <td>BASF SE NA O.N.</td>      <td>73.28</td>    </tr>    <tr>      <th>2</th>      <td>BAY.MOTOREN WERKE AG ST</td>      <td>73.93</td>    </tr>    <tr>      <th>3</th>      <td>BAYER AG NA O.N.</td>      <td>89.48</td>    </tr>    <tr>      <th>4</th>      <td>BEIERSDORF AG O.N.</td>      <td>84.26</td>    </tr>  </tbody></table>
 
 </div>
-
-# # CLOSING THOUGTS
-
-##### SOURCES:
