@@ -15,6 +15,7 @@ Web <a href='https://en.wikipedia.org/wiki/Web_scraping'>scraping</a>, essential
 Within Python universe, there is a number of powerful tools that can be used to handle such parsing tasks, being the most prominent <a href='https://pypi.python.org/pypi/beautifulsoup4'>BeautifulSoup</a>, <a href='https://pypi.python.org/pypi/selenium'>Selenium</a>, <a href='https://pypi.python.org/pypi/Scrapy'>Scrapy</a> and <a href='https://pypi.python.org/pypi/lxml'>Lxml</a>. The first two are simpler to use, while the two latest are for the more advanced user. Actually note that Scrapy is of a diferent breed from all others, being a complete framework that allows for parsing and web-crawling pretty much alike the main search engines use in their world-wide crawling routines.
 
 Cool! But what real world examples can be solved by this libraries? To mention a few:
+
 * Getting companies' financial data;
 * Obtaining stock market live prices;
 * Check competitors' products pricing;
@@ -24,7 +25,7 @@ Cool! But what real world examples can be solved by this libraries? To mention a
 
 ## # Parsing Example
 
-Now let's stick to an example to expand further. If you are a stock market follower, you can find financial information all over the web, and the diversity of data sources available it is very extensive.
+Now let's stick to an example to expand further. If you are a stock market follower, you can find financial information all over the web, and the diversity of data sources available it is quite extensive nowadays.
 
 Getting closing prices everyday can be a pain, especially when you have to open several webpages to record them often.
 
@@ -44,7 +45,7 @@ To start with, we need to select the data to be targeted, by having a peep into 
 
 <IMAGE2>
 
-So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `<span>` element that we can reference by the class name `class="last last-delayed"`.
+So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `<span>` element that we can reference by the class name `last last-delayed`.
 
 
 ## # Extracting Data 
