@@ -45,7 +45,7 @@ To start with, we need to select the data to be targeted, by having a peep into 
 
 <IMAGE2>
 
-So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `<span>` element that we can reference by the class name `last last-delayed`.
+So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `span` element that we can reference by the class name `last last-delayed`.
 
 
 ## # Extracting Data 
