@@ -37,13 +37,13 @@ In this article, we will show you how to make your data extraction from easier b
 
 The selected data source for the example was <a href='http://www.teletrader.com/'>Teletrader</a>, and we will be obtaining data pertaining to <a href='http://www.teletrader.com/dax/index/tts-514562'>German DAX index</a>.
 
-<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/pictures/2015-12-26-web-parsing_0.png'></img>
+<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/img/posts/2015-12-26-web-parsing_0.png'></img>
 
 To start with, we need to select the data to be targeted, by having a peep into the webpage code. To do so, browsers nowadays have a built-in tool that can be found by right clicking over the page element we wish to observe and selecting `Inspect` in the context menu.
 
-<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/pictures/2015-12-26-web-parsing_1.png'></img>
+<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/img/posts/2015-12-26-web-parsing_1.png'></img>
 
-<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/pictures/2015-12-26-web-parsing_2.png'></img>
+<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/img/posts/2015-12-26-web-parsing_2.png'></img>
 
 
 So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `span` element that we can reference by the class name `last last-delayed`.
