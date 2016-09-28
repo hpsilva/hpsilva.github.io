@@ -138,7 +138,7 @@ for item in tRows:
                   ignore_index=True)
     
 # Display results
-df
+df.head()
 ```
 
 Lastly our script iterate over each parsed table row stored under the variable `tRows` and store data to a pandas dataframe for convenience. We close this article by displaying the head of the dataframe:
