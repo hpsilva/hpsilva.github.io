@@ -10,9 +10,9 @@ published: true
 When it comes to Business Intelligence, more and more the Internet provides with abundant sources of data for industry practicioners. 
 Extracting data from websites however, can at times be a tedious and dauting task especially when the selected data source do not provide with a formal <a href='https://en.wikipedia.org/wiki/Web_API'>API</a>, and here is where web scraping comes to rescue.
 
-Web <a href='https://en.wikipedia.org/wiki/Web_scraping'>scraping</a>, essentially are the techniques employed programatically so that we extract information from web places, information that in first place was arranged to be read by human eye rather than in a computer friendly format way.
+Web <a href='https://en.wikipedia.org/wiki/Web_scraping'>scraping</a>, essentially are the techniques employed programatically so that information is extracted from web places, information that in first place was arranged to be read by human eye rather than by computers.
 
-Within Python universe, there is a number of powerful tools that can be used to handle such parsing tasks, being the most prominent <a href='https://pypi.python.org/pypi/beautifulsoup4'>BeautifulSoup</a>, <a href='https://pypi.python.org/pypi/selenium'>Selenium</a>, <a href='https://pypi.python.org/pypi/Scrapy'>Scrapy</a> and <a href='https://pypi.python.org/pypi/lxml'>Lxml</a>. The first two are simpler to use, while the two latest are for the more advanced user. Actually note that Scrapy is of a diferent breed from all others, being a complete framework that allows for parsing and web-crawling pretty much alike the main search engines use in their world-wide crawling routines.
+Within Python universe, there is a number of powerful tools that can be used to handle such parsing tasks, being the most prominent <a href='https://pypi.python.org/pypi/beautifulsoup4'>BeautifulSoup</a>, <a href='https://pypi.python.org/pypi/selenium'>Selenium</a>, <a href='https://pypi.python.org/pypi/Scrapy'>Scrapy</a> and <a href='https://pypi.python.org/pypi/lxml'>Lxml</a>. The first two are simpler to use, while the two latest are for the more advanced user. Actually, note that Scrapy is of a diferent breed from all others, being a complete framework that allows for parsing and web-crawling pretty much alike search engines in their world-wide crawling routines.
 
 Cool! But what real world examples can be solved by this libraries? To mention a few:
 
@@ -25,7 +25,7 @@ Cool! But what real world examples can be solved by this libraries? To mention a
 
 ## # Parsing Example
 
-Now let's stick to an example to expand further. If you are a stock market follower, you can find financial information all over the web, and the diversity of data sources available it is quite extensive nowadays.
+Now let's grab an example to expand further. If you are a stock market follower, you can find financial information all over the web, and the diversity of data sources available it is quite extensive nowadays.
 
 Getting closing prices everyday can be a pain, especially when you have to open several webpages to record them often.
 
