@@ -41,9 +41,10 @@ The selected data source for the example was <a href='http://www.teletrader.com/
 
 To start with, we need to select the data to be targeted, by having a peep into the webpage code. To do so, browsers nowadays have a built-in tool that can be found by right clicking over the page element we wish to observe and selecting `Inspect` in the context menu.
 
-IMAGE1
+<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/pictures/2015-12-26-web-parsing_1.png'></img>
 
-IMAGE2
+<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/_posts/pictures/2015-12-26-web-parsing_2.png'></img>
+
 
 So far we have identified where data will be parsed from, and spotted the elements in the webpage html that we will be targeting by our script. Note that it is a `span` element that we can reference by the class name `last last-delayed`.
 
