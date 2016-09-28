@@ -37,7 +37,9 @@ In this article, we will show you how to make your data extraction from easier b
 
 The selected data source for the example was <a href='http://www.teletrader.com/'>Teletrader</a>, and we will be obtaining data pertaining to <a href='http://www.teletrader.com/dax/index/tts-514562'>German DAX index</a>.
 
-![alt text](https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/img/posts/2015-12-26-web-parsing_0.png "Teletrader Platform")
+<p align='center'>
+	<img src='https://raw.githubusercontent.com/hpsilva/hpsilva.github.io/master/img/posts/2015-12-26-web-parsing_0.png'></img>,
+</p>
 
 To start with, we need to select the data to be targeted, by having a peep into the webpage code. To do so, browsers nowadays have a built-in tool that can be found by right clicking over the page element we wish to observe and selecting `Inspect` in the context menu.
 
