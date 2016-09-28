@@ -51,6 +51,7 @@ So far we have identified where data will be parsed from, and spotted the elemen
 ## # Extracting Data 
 
 ```python
+
 # Import Libraries
 import urllib2
 import BeautifulSoup as bs
@@ -70,6 +71,7 @@ soup = bs.BeautifulSoup(data)
 ```
 
 ```python
+
 # Target HTML element
 price = soup.find(name='span', attrs={'class':'last last-delayed'})
 
@@ -85,6 +87,7 @@ price.text
 ## # Transforming
 
 ```python
+
 # Target <div> with table
 div = soup.find(name='div', attrs={'class': 'component index-members clearfix'})
 
