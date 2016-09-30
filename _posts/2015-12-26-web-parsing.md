@@ -14,7 +14,7 @@ Web <a href='https://en.wikipedia.org/wiki/Web_scraping'>scraping</a>, essential
 
 Within Python universe, there is a number of powerful tools that can be used to handle such parsing tasks, being the most prominent <a href='https://pypi.python.org/pypi/beautifulsoup4'>BeautifulSoup</a>, <a href='https://pypi.python.org/pypi/selenium'>Selenium</a>, <a href='https://pypi.python.org/pypi/Scrapy'>Scrapy</a> and <a href='https://pypi.python.org/pypi/lxml'>Lxml</a>. The first two are simpler to use, while the two latest are for the more advanced user. Actually, note that Scrapy is of a different breed from all others, being a complete framework that allows for parsing and web-crawling pretty much alike search engines in their world-wide crawling routines.
 
-Cool! But what real world examples can be solved by this libraries? To mention a few:
+Cool! But what sort of real world examples can be solved by this libraries? To mention a few:
 
 * Getting companies' financial data;
 * Obtaining stock market live prices;
@@ -149,5 +149,5 @@ Lastly our script iterate over each parsed table row stored under the variable `
 <br>
 For article simplicity, the demonstration here developed covers a small part of the parsing functionalities available to the user. Nonetheless, and from our point of view it provides the reader with great hints of what tasks can get done at ease. Obviously the code could be developed much further with things like error control routines, multiprocessing, throtling, etc., steps that essentially **must be** present in bigger scrapping projects. 
 
-Now we leave you to experiment your own example. Happy scrapping!
+Now it's your turn to experiment with your own examples. Happy scrapping!
 <br>
