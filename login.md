@@ -70,9 +70,19 @@ published: true
     
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     
-    <br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
   </form>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </div>
     
