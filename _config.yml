@@ -16,7 +16,7 @@ navbar-links:
     #- Macro / Fundamentals
     #- Charts
   #Systems: "systems"
-  About: "about"
+  #About: "about"
   LOGIN: "login"
 
 
