@@ -14,7 +14,7 @@ In the situation that the data under scrutiny is for own consumption, on this en
 By keeping the `ord(char)` below 128 we assure that our characters will be only ascii, like so:
 
 ```python
-unicode_string = 'Importação'
+unicode_string = u'Importação'
 fix = ''.join([x for x in unicode_string if ord(x) < 128])
 
 > 'Importao'
@@ -26,7 +26,7 @@ fix = ''.join([x for x in unicode_string if ord(x) < 128])
 Another possibility is to make use of the built in library and it's encode/decode methods. It encodes a string to a given encoding, but note that it must be assured the arguments `ignore` or `replace` are passed:
 
 ```python
-unicode_string = 'Importação'
+unicode_string = u'Importação'
 unicode_string.encode('ASCII', 'ignore')
 
 > 'Importao'
@@ -47,7 +47,7 @@ Unicodedata contains a method named `normalize` that is used to return the norma
 ```python
 import unicodedata as unicode
 
-unicode_string = 'Importação'
+unicode_string = u'Importação'
 unicode.normalize('NFKD', unicode_string).encode('ASCII', 'ignore')
 
 > 'Importacao'
