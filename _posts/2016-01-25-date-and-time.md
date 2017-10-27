@@ -37,4 +37,13 @@ datetime.now()
 
 Fortunately Python datetimes can be made time zone aware, by supplying an instance of tzinfo in the constructor. Unfortuantely anough, the Python standard library does not provide ay concrete implementations. Then it enters Pytz, a Python library that supplies hundreds of concrete time zone definitions.
 
+### OTHER LIBRARIES
+
+
+### PANDAS
+
+
+### CLOSING THOUGHTS
+DATETIM VS TRADING
+
 
