@@ -4,7 +4,7 @@ title: The beginning
 subtitle: ...is the most important work
 comments: false
 show-avatar: true
-published: false
+published: true
 ---
 
 > <p>You know that the beginning is the most important part of any work, especially in the case of a young and tender thing; for that is the time at which the character is being formed and the desired impression is more readily taken....
