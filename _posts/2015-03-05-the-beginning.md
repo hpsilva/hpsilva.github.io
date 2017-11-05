@@ -18,7 +18,7 @@ If we think a bit about it, how can we accomplish great things if we never get s
 
 Now you ought to think that you don't possess right now the required skill or means to put the vision moving forward? Or that you should be educating yourselves for a start? Definitely! 
 
-But what if you do those things while going thru the process after getting started. People tend to spend endless time over-educating themselves without acting on their learnings while getting ready or waiting for the perfect time, but there will never be a perfect time! I guess Plato would tell you to quit making excuses and RIGHT start now, just because until you start no progress is made. 
+But what if you do those things while going thru the process after getting started. People tend to spend endless time over-educating themselves without acting on their learnings while getting ready or waiting for the perfect time, but there will never be a perfect time! I guess Plato would tell you to quit making excuses and **start right now, just because until you start no progress is made**. 
 
 **Massive action is the key to progress**. Slowly as we put in the work, hours turn into days, days into months and suddenly we are performing the craft we once deemed impossible!
 
