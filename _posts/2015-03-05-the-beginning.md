@@ -7,6 +7,8 @@ show-avatar: true
 bigimg: /img/banner-flying.jpg
 ---
 
+### Opportunities | The beginning
+
 >"You know that the beginning is the most important part of any work"
 >
 >Plato, The Republic
@@ -15,6 +17,8 @@ As we dive deeper in the technological era of all things web interconnected, it 
 
 To begin with, how we get on that road is not as important as **when**.  We shall recognize that any first step will lead to the second, and so on... Interestingly if we don't put action forward, the rest of the unfolding work will never get done and opportunities will never show up, right? That is why possibly great philosopher Plato once said that "beginnings are the most import part of any work".
 If we think a bit about it, how can we accomplish great things if we never get started?
+
+### Taking action
 
 Now you ought to think that you don't possess right now the required skill or means to put the vision moving forward? Or that you should be educating yourselves for a start? Definitely! 
 
