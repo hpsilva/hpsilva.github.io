@@ -13,7 +13,7 @@ published: true
 
 As we dive deeper in the technological era of all things web interconnected, it is the perfect time to look ahead in the future and get hands in few of the many unfolding opportunities.
 
-To begin with, how we get on that road is not as important as when.  We shall recognize that any first step will lead to the second, and so on... The particularity is that if we don't begin, the rest of the unfolding work will never get done and opportunities will never show up, right? That is why possibly great philosopher Plato once said that "beginings are the most import part of any work".
+To begin with, how we get on that road is not as important as when.  We shall recognize that any first step will lead to the second, and so on... The particularity is that if we don't begin, the rest of the unfolding work will never get done and opportunities will never show up, right? That is why possibly great philosopher Plato once said that "beginnings are the most import part of any work".
 If we think a bit about it, how can we accomplish great things if we never get started?
 
 Now you ought to think that you don't possess right now the required skill or means to put the vision moving forward? Or that you should be educating yourselves for a start? Definitely! 
