@@ -1,10 +1,10 @@
 ---
 layout: post
 title: The beginning
-subtitle: ...is the most important work
+subtitle: ...Is the most important work
 comments: false
 show-avatar: true
-published: true
+bigimg: /img/banner-flying.jpg
 ---
 
 >"You know that the beginning is the most important part of any work"
