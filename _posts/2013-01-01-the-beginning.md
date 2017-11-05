@@ -8,6 +8,7 @@ published: true
 ---
 
 >"You know that the beginning is the most important part of any work"
+>
 >Plato, The Republic
 
 As we dive deeper in the technological era of all things web interconnected, it is the perfect time to look ahead in the future and get hands in few of the many unfolding opportunities.
@@ -18,11 +19,10 @@ If we think a bit about it, how can we accomplish great things if we never get s
 Now you ought to think that you don't possess right now the required skill or means to put the vision moving forward? Or that you should be educating yourselves for a start? Definitely! 
 
 
-But what if you do those things while going thru the process after getting started. People tend to spend endless time over-educating themselves without acting on what their learnings while getting ready or waiting for the perfect time, but there will never be a perfect time! I guess Plato would tell you to quit making excuses and start now, just because until you start no progress is made. Massive action is the key to progress.
+But what if you do those things while going thru the process after getting started. People tend to spend endless time over-educating themselves without acting on their learnings while getting ready or waiting for the perfect time, but there will never be a perfect time! I guess Plato would tell you to quit making excuses and RIGHT start now, just because until you start no progress is made. 
 
-> Start by doing what is necessary; then do what's possible; suddenly you are doing the impossible
-> St. Francis of Assis
+Massive action is the key to progress. Slowly as we put in the work, hours turn into days, days into months and one day we are performing the craft we once thought would be impossible!
 
-
-As we begin the journey we are capable of doing just the necessary. We don't immedialtely have the means to know/do it all. Slowly as we put in the work, hours turn into days, days into months, fog lifts and we begin to recall our forsaken dreams and goals.
-One day we realize it might be possible for us to achieve what we abandoned. As our dreams are reclaimed we become what we thought was impossible earlier.
+>"Start by doing what is necessary; then do what's possible; suddenly you are doing the impossible"
+>
+>"St. Francis of Assis"
