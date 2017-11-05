@@ -26,8 +26,8 @@ But what if you do those things while going through the process after getting st
 
 ### # Conclusion
 
-**Massive action is the key to progress**. Slowly as we put in the work, hours turn into days, days into months and suddenly we are performing the craft we once deemed impossible!
-
 >"Start by doing what is necessary; then do what's possible; suddenly you are doing the impossible"
 >
 >St. Francis of Assis
+
+**Massive action is the key to progress**. Slowly as we put in the work, hours turn into days, days into months and suddenly we are performing the craft we once deemed impossible!
