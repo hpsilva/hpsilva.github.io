@@ -24,4 +24,4 @@ But what if you do those things while going thru the process after getting start
 
 >"Start by doing what is necessary; then do what's possible; suddenly you are doing the impossible"
 >
->"St. Francis of Assis"
+>St. Francis of Assis
